@@ -10,6 +10,7 @@ applied to how the skills behave.
 
 ### Added
 
+- ai-knowledge: plans a knowledge file with the user before writing it (use cases, a triage of what goes in, and a File plan with a sample entry), writes it for how assistants read project files, small or retrieved in pieces, and tests it with a cold reader who has only the file and any overlapping neighbor files.
 - Repository skeleton: README, MIT license, changelog, plugin and marketplace manifests, skill principles and the maintenance project's instructions.
 
 ### Changed
