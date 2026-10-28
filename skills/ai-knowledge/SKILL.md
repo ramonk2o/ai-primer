@@ -137,7 +137,7 @@ Ask for explicit approval. Pending items are resolved before writing or, if the 
 
 **2.2 Cut.** Remove every line that doesn't change an answer in a use case: repetition, common knowledge, background, transitions, near-duplicates of a neighbor. Keep every exact name, number, unit, condition, exception and negation.
 
-**2.3 Cold reader.** In the full path, read `references/cold-reader.md` and run it with the file and the use cases, attaching the overlapping neighbors when the triage noted any. Add a rule or example only to fix what the test shows failing. In the light path, offer it in one line.
+**2.3 Cold reader.** In the full path, read `references/cold-reader.md` and run it with the file and the use cases, attaching the overlapping neighbors when the triage noted any. Add a rule or example only to fix what the test shows failing. A fix that adds a rule, a fact or an example is a proposal the user approves before delivery; a fix that changes no decision goes straight. In the light path, offer it in one line.
 
 ## Deliver
 
