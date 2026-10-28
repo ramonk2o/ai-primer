@@ -2,7 +2,7 @@
   "name": "metawork",
   "displayName": "Metawork",
   "version": "0.0.0",
-  "description": "Skills that help you work with LLMs: they plan with you before writing projects, context files and prompts for AI assistants.",
+  "description": "Skills that help you work with LLMs: they plan with you before writing projects, knowledge files and prompts for AI assistants.",
   "author": {
     "name": "Ramon K.",
     "email": "contato@ramonk.com"
