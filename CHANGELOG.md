@@ -11,6 +11,7 @@ applied to how the skills behave.
 ### Changed
 
 - The README points Claude apps users to each skill's zip in the latest release instead of asking them to zip the folder.
+- Release flow: every release on GitHub carries a zip of each skill, and the session delivers them when it can't create the release itself.
 
 ## [0.1.0] - 2026-10-28
 
