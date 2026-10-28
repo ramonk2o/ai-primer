@@ -17,7 +17,7 @@ Metawork's skills help people write what LLMs read: prompts, project instruction
 
 ## Checking the result
 
-8. **Test by result, outside the conversation.** The output is read by a model, whose failures its author can't see, so it is tested by running it where the conversation can't help: the prompt on a realistic input, a knowledge file answering real questions with only the file, project instructions in a fresh chat. When the session can start a separate agent, the skill runs the test; when it can't, or the target tool is out of reach, it gives the user a ready test for a new conversation, because a model inside this conversation already knows the answer. On the light path, the test is offered in one line instead of run.
+8. **Test by result, outside the conversation.** The output is read by a model, whose failures its author can't see, so it is tested by running it where the conversation can't help: the prompt on a realistic input, a knowledge file answering real questions with only the file, project instructions in a fresh chat. When the session can start a separate agent, the skill runs the test; when it can't, or the target tool is out of reach, it gives the user a ready test for a new conversation, because a model inside this conversation already knows the answer. On the light path, the test is offered in one line instead of run. A fix the test calls for that adds a rule or a fact is a proposal the user approves; only fixes that change no decision go straight.
 
 ## Building a skill
 
