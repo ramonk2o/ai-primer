@@ -1,6 +1,6 @@
-# metawork principles
+# Metawork principles
 
-metawork's skills help people write what LLMs read: prompts, project instructions and knowledge files. Each skill settles with the user what a good result is before writing, and tests the result outside the conversation. This file holds the principles every skill follows and the questions for judging a change. A change that breaks a principle is a design decision and needs the maintainer's explicit agreement.
+Metawork's skills help people write what LLMs read: prompts, project instructions and knowledge files. Each skill settles with the user what a good result is before writing, and tests the result outside the conversation. This file holds the principles every skill follows and the questions for judging a change. A change that breaks a principle is a design decision and needs the maintainer's explicit agreement.
 
 ## Taking a request
 

@@ -1,4 +1,4 @@
-# metawork
+# Metawork
 
 Skills that help you work with LLMs. Each skill plans the piece with you before writing it — what it is for, what goes in, what a good result looks like — so the project, context file or prompt you end up with does its job the first time.
 

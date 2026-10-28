@@ -1,5 +1,6 @@
 {
   "name": "metawork",
+  "displayName": "Metawork",
   "version": "0.0.0",
   "description": "Skills that help you work with LLMs: they plan with you before writing projects, context files and prompts for AI assistants.",
   "author": {
@@ -9,5 +10,11 @@
   "homepage": "https://github.com/ramonk2o/metawork",
   "repository": "https://github.com/ramonk2o/metawork",
   "license": "MIT",
-  "keywords": ["skills", "llm", "prompts", "context", "projects"]
+  "keywords": [
+    "skills",
+    "llm",
+    "prompts",
+    "context",
+    "projects"
+  ]
 }

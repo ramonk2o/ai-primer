@@ -11,3 +11,7 @@ applied to how the skills behave.
 ### Added
 
 - Repository skeleton: README, MIT license, changelog, plugin and marketplace manifests, skill principles and the maintenance project's instructions.
+
+### Changed
+
+- The plugin is shown as Metawork, with a capital M; its install name stays `metawork`.
