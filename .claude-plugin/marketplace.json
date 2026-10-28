@@ -1,14 +1,14 @@
 {
-  "name": "metawork",
-  "description": "Marketplace for the Metawork plugin.",
+  "name": "ai-primer",
+  "description": "Marketplace for the AI Primer plugin.",
   "owner": {
     "name": "Ramon K.",
     "email": "contato@ramonk.com"
   },
   "plugins": [
     {
-      "name": "metawork",
-      "displayName": "Metawork",
+      "name": "ai-primer",
+      "displayName": "AI Primer",
       "source": "./",
       "description": "Skills that help you work with LLMs: they plan with you before writing projects, knowledge files and prompts for AI assistants."
     }

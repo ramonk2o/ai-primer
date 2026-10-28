@@ -1,4 +1,4 @@
-# Metawork
+# AI Primer
 
 Skills that help you work with LLMs. Each skill plans the piece with you before writing it — what it is for, what goes in, what a good result looks like — so the project, knowledge file or prompt you end up with does its job the first time.
 
@@ -18,8 +18,8 @@ Early and experimental (before 1.0). Skills are being built one at a time. See [
 ### Claude Code
 
 ```
-/plugin marketplace add ramonk2o/metawork
-/plugin install metawork@metawork
+/plugin marketplace add ramonk2o/ai-primer
+/plugin install ai-primer@ai-primer
 ```
 
 The plugin updates when a new version is released.

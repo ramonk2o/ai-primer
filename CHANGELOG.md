@@ -18,7 +18,7 @@ applied to how the skills behave.
 
 - Principle 8: a fix the test calls for that adds a rule or a fact is a proposal the user approves; only fixes that change no decision go straight.
 - ai-knowledge: a fix from the cold reader that adds a rule, a fact or an example is a proposal the user approves before delivery, as principle 8 now says.
-- The plugin is shown as Metawork, with a capital M; its install name stays `metawork`.
+- The plugin is named AI Primer; its install name is `ai-primer`.
 
 ### Fixed
 
