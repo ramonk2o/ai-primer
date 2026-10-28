@@ -8,6 +8,10 @@ applied to how the skills behave.
 
 ## [Unreleased]
 
+### Changed
+
+- The README points Claude apps users to each skill's zip in the latest release instead of asking them to zip the folder.
+
 ## [0.1.0] - 2026-10-28
 
 ### Added
