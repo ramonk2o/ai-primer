@@ -27,7 +27,7 @@ The plugin updates when a new version is released.
 
 ### Claude apps (claude.ai, desktop, mobile)
 
-Each skill can be installed on its own: zip its folder from `skills/`, with the folder at the root of the zip, and upload it as a skill in your Claude settings.
+Each skill can be installed on its own: download its zip (`ai-project.zip`, `ai-knowledge.zip` or `ai-prompt.zip`) from the [latest release](https://github.com/ramonk2o/ai-primer/releases/latest) and upload it as a skill in your Claude settings.
 
 ## How it is built
 
