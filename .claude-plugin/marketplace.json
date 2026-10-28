@@ -1,0 +1,15 @@
+{
+  "name": "metawork",
+  "description": "Marketplace for the metawork plugin.",
+  "owner": {
+    "name": "Ramon K.",
+    "email": "contato@ramonk.com"
+  },
+  "plugins": [
+    {
+      "name": "metawork",
+      "source": "./",
+      "description": "Skills that help you work with LLMs: they plan with you before writing projects, context files and prompts for AI assistants."
+    }
+  ]
+}
