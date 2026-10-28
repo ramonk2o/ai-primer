@@ -8,6 +8,7 @@ The skills are written in English and talk to you in your own language.
 
 - **ai-project** — designs a Claude project, ChatGPT project or Gemini notebook with you (the requests it serves, its instructions, and which files or live sources it uses and when), then writes it and tests it with a reader who has only what the project will have.
 - **ai-knowledge** — plans and writes a knowledge file for an AI assistant project (a playbook, reference, profile, guidelines, glossary, example set, checklist or output template), then tests it with a reader who has only the file.
+- **ai-prompt** — helps you work out what you want from an AI assistant, recommends the model and mode to run it in (ChatGPT, Claude or Gemini) from current vendor docs, and writes the prompt, a template or a chain of prompts across chats, then tests it by what it produces. Not for image, video or audio prompts.
 
 ## Status
 
