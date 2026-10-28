@@ -8,6 +8,8 @@ applied to how the skills behave.
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-10-28
+
 ### Added
 
 - ai-prompt: helps the user work out what they want before writing a prompt (what the result is for, what would make it good or bad, which decisions the prompt would leave to the model), recommends one model and mode in ChatGPT, Claude or Gemini from current official docs and the user's plan, and writes the prompt for it. Covers one-off asks, conversation openers, deep research, agent tasks, reusable templates, chains across chats and models with the handover between steps, model-only questions and diagnosis of a prompt that misfires. Prompts are tested with a cold executor and a separate judge.
