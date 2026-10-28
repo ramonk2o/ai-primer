@@ -17,5 +17,5 @@ Used in step 0.2 when the destination is known or the project is large. These no
 - Source: OpenAI Help Center, "Projects in ChatGPT"; OpenAI API docs, "File search".
 
 ## Gemini notebooks (checked 2026-10-28)
-- Notebooks in the Gemini app (from April 2026) hold sources (files, Drive items, websites, pasted text), past chats and an instructions field, and sync with NotebookLM. Google hasn't published source limits for them.
-- Source: Google announcements of notebooks in the Gemini app, April 2026.
+- Notebooks in the Gemini app (from April 2026) hold sources (files, Drive items, websites, pasted text), past chats and an instructions field, and sync with NotebookLM. A notebook holds up to 600 sources, depending on the Google AI plan.
+- Source: Google announcements of notebooks in the Gemini app, April 2026; Gemini Apps Help, "Organize your projects with notebooks in Gemini Apps".
