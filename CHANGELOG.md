@@ -10,6 +10,7 @@ applied to how the skills behave.
 
 ### Changed
 
+- ai-prompt: prompts ask for the methods, tools and raw material a leading professional would use, and for an outside check of the result, instead of giving the model a role; the full path's Prompt plan shows these as proposals, and the light path applies them in the draft. Adapted from Felix Rieseberg's "How to be more ambitious: A tutorial for humans with models" (October 2026).
 - The README points Claude apps users to each skill's zip in the latest release instead of asking them to zip the folder.
 - Release flow: every release on GitHub carries a zip of each skill, and the session delivers them when it can't create the release itself.
 

@@ -42,7 +42,7 @@ Then the mode:
 
 **Full** — templates, deep research, agent tasks, chains, and any prompt whose result goes to a client or into a decision. Rounds, the Prompt plan gate, writing and the test.
 
-**Light** — one-off asks and conversation openers otherwise, and a fix to a single prompt. After the research, the first reply brings the short Prompt plan with the complete prompt as its draft, any missing fact as a `[placeholder]`, and at most three questions: the goal first when it is in real doubt (see "What the user wants"), then the path, recommending light and naming what would make it full, then the user's access when the target is open. Answers that only fill placeholders or adjust wording approve the prompt and the next reply delivers it; answers that change the goal or the target reopen the draft. The test is offered in one line. If the stakes rise or a step appears that feeds another, suggest switching to full.
+**Light** — one-off asks and conversation openers otherwise, and a fix to a single prompt. After the research, the first reply brings the short Prompt plan with the complete prompt as its draft, any missing fact as a `[placeholder]`, and at most three questions: the goal first when it is in real doubt (see "What the user wants"), then the path, recommending light and naming what would make it full, then the user's access when the target is open. Answers that only fill placeholders or adjust wording approve the prompt and the next reply delivers it; answers that change the goal or the target reopen the draft. The draft uses the depth questions in `references/research.md` without adding one for the user. The test is offered in one line. If the stakes rise or a step appears that feeds another, suggest switching to full.
 
 ## How to run it
 
@@ -95,6 +95,7 @@ Bring in one message:
 - **Where it runs,** from `references/model-choice.md`, with sources and date; where it lands.
 - **Left to the model:** the decisions the prompt states as the model's call.
 - **Inputs:** what the prompt receives each run, with variable names for a template.
+- **Methods and material:** what the target uses to do the work as a leading professional would: the methods and tools, the rawest material it gets, and the outside check it runs, from `references/research.md`, each marked as a proposal.
 - **Settings and constraints:** what is set in the app rather than written (mode, files to attach, connected sources), the output format and the exclusions.
 - **Prompt shape:** its parts in order, from the case and the target's guidance, and its approximate length; a long prompt needs a reason here.
 - **Chain map,** as `references/chain.md` says.
@@ -109,6 +110,7 @@ Run in: [app, model, mode] — why: … — costs: [plan, wait, limits] — sour
 Lands in: new chat | project with instructions | step N's chat
 Left to the model: …
 Inputs · variables: …
+Methods and material: [methods, tools] · material: … · check: …
 Settings in the app: … · Exclusions: …
 Prompt shape: [parts] · about [length] · language: …
 Chain: 1. [step] — [runs in] — passes [what] → check …
