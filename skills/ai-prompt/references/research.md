@@ -8,10 +8,12 @@ Used before recommending a model or mode and before writing any prompt, and agai
 
 **Practice for the goal.** How people get good results for this kind of task (a contract review, a monthly CRM analysis, a literature scan): structures, criteria, inputs that help, common failures. Prefer the vendors' own cookbooks and guides, published evaluations, and practitioners who show the prompt with its result. Mark these as independent and treat each as a hypothesis: it enters the prompt only if it serves a statement of the goal, and the test checks it. When the guidance and a tip disagree, follow the guidance and say so.
 
+On the full path, answer four questions for the task's field and bring the answers to the plan as proposals: what a leading professional would do here that the request doesn't ask for; the rawest material they would start from instead of a digested version; the specific methods and tools they would use; and what, other than the user or the model, would show the result is right. Keep only what serves a statement of the goal and what the target can reach. On the light path, apply them in the draft without adding a question.
+
 ## What never counts as a source
 - "Best prompts" and "hacks" lists, affiliate pages, and pages that sell one of the options.
 - The model's memory for any name, version, limit or price.
-- Tricks with no shown result, especially those aimed at older models (threats, rewards, "think step by step" for a reasoning mode, capital letters for emphasis): they can make current models worse.
+- Tricks with no shown result, especially those aimed at older models (threats, rewards, a role in place of a method such as "you are an expert analyst", "think step by step" for a reasoning mode, capital letters for emphasis): they can make current models worse.
 
 ## Keep it proportionate
 - A few pages: one or two official pages for the target, and a few for the goal, fewer on the light path. The aim is the requirements checked, not a survey.

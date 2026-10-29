@@ -26,6 +26,10 @@ Used in the Write step and for the light path's draft. These rules apply to ever
 - Phrase instructions as what to do ("write in short paragraphs") rather than what to avoid.
 - Concrete beats adjectival: "for a director who reads it on the phone between meetings" says more than "concise and professional".
 
+## Ask for the expert's work, not the expert
+- Name the methods, tools, sources and material a leading professional would use for this task, from the plan's "Methods and material" line, instead of a role ("you are a senior analyst"). A role changes the answer's vocabulary without changing how the work is done.
+- When the target can check its result against something outside it (running a calculation, cross-checking sources, comparing with a file), ask for that check and its evidence next to the result. A model asked only whether its work is right tends to say yes.
+
 ## Structure
 - Separate the parts of a prompt that mixes instructions, context, examples and inputs, with headings or tags (`<context>`, `<input>`), named the same way throughout.
 - Long material goes before the request, and the request at the end.
