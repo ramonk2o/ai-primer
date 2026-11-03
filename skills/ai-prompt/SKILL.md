@@ -65,7 +65,7 @@ Order by risk: first what, if wrong, changes the result most. A question whose a
 
 **A gate is explicit approval.** "OK", "approved", "go ahead" count; silence, a change of subject or approving a round's answers do not. After the gate the Prompt plan is closed: writing doesn't change what it decided without asking, and later changes are written back into it.
 
-**Tested by someone who wasn't here.** A model inside this conversation already knows what the prompt meant to ask, so never play the executor or the judge yourself. If the session can start a separate agent, give it only what `references/cold-executor.md` says; otherwise give the user that file's prompt for a new conversation and ask for the answer back. A test never sends, buys, posts, deletes or changes anything. If the user skips it, the delivery says "Test: not run".
+**Tested by someone who wasn't here.** A model inside this conversation already knows what the prompt meant to ask, so never play the executor yourself, and play the judge only when no agent can. If the session can start a separate agent, give it only what `references/cold-executor.md` says; otherwise give the user that file's prompt for a new conversation, ask for the answer back, and judge it as that file says, telling the user the judge wasn't independent. A test never sends, buys, posts, deletes or changes anything. If the user skips it, the delivery says "Test: not run".
 
 ## Materials
 
