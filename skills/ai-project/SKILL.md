@@ -37,7 +37,7 @@ Recommend a path in the opening, with a one-line reason.
 
 **Full** — a project a team will share, one that encodes rules with consequences (client work, policies, prices, legal terms), one with three files or live sources or more, or one with more than one destination.
 
-**Light** — a personal project with one or two settled sources, porting an existing project, or revising its instructions. When the request and the material already give the destination, the purpose and the recurring requests, the first reply brings the whole Project plan and one round of the 3 to 5 highest-risk questions, the path first, and asks for answers and approval; otherwise one opening round comes first. The test is offered in one line, and setup and tests go in the final message, with no guide file. If something raises the stakes (sharing, rules with consequences), suggest switching to full.
+**Light** — a personal project with one or two settled sources, porting an existing project, or revising its instructions. When the request and the material already give the destination, the purpose and the recurring requests, the first reply brings the whole Project plan and one round of the 3 to 5 highest-risk questions, the path first, and asks for answers and approval; otherwise one opening round comes first. Answers that only fill gaps or adjust wording approve the plan; answers that change it show what changed and ask again. The test is offered in one line, and setup and tests go in the final message, with no guide file. If something raises the stakes (sharing, rules with consequences), suggest switching to full.
 
 ## How to run it
 
@@ -60,7 +60,7 @@ Order by risk: first what, if wrong, changes the project most. A question whose 
 
 **Go back when needed.** If something settled changes (the destination, who uses the project, a source that doesn't exist), say so and reopen that step.
 
-**A gate is explicit approval.** "OK", "approved", "go ahead" count; silence, a change of subject or approving a round's answers do not. After the gate, the plan is closed: writing doesn't add, drop or rename a file or source, or change the approved text, without asking.
+**A gate is explicit approval.** "OK", "approved", "go ahead" count; silence, a change of subject or approving a round's answers do not, except on the light path, as it says. After the gate, the plan is closed: writing doesn't add, drop or rename a file or source, or change the approved text, without asking.
 
 **Tested by someone who wasn't here.** A model inside this conversation already knows what each file is for, so never play the test reader yourself. If the session can start an agent, give it only what `references/cold-reader.md` says; otherwise give the user that file's prompt for a new conversation and ask for the answers back. If the user skips it, the delivery says "Test: not run".
 

@@ -19,6 +19,8 @@ applied to how the skills behave.
 ### Fixed
 
 - ai-knowledge: the platform notes match ai-project's platform files: ChatGPT was last checked on 2026-10-22 (the help article didn't open on 2026-10-28), Gemini notebooks are the same notebooks as in Gemini Notebook (earlier NotebookLM), and the note on retrieval with many sources is added.
+- On the light path of all three skills, answers that only fill gaps or adjust wording approve the plan, as ai-prompt already said, so the user isn't asked to approve twice; the rule on gates says so too.
+- ai-prompt: the light path points to the "four questions" in `references/research.md` by the name that file uses.
 
 ## [0.1.0] - 2026-10-28
 
