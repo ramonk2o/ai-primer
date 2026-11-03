@@ -19,6 +19,7 @@ applied to how the skills behave.
 ### Fixed
 
 - ai-knowledge: the platform notes match ai-project's platform files: ChatGPT was last checked on 2026-10-22 (the help article didn't open on 2026-10-28), Gemini notebooks are the same notebooks as in Gemini Notebook (earlier NotebookLM), and the note on retrieval with many sources is added.
+- ai-project and ai-knowledge describe the handover of a knowledge file with the same list on both sides (adding the project's size, the use cases the file serves, its type, who updates it and where to save it), and say that the handed file follows the project's path and is tested and delivered with the whole project, not on its own.
 
 ## [0.1.0] - 2026-10-28
 
