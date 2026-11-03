@@ -19,6 +19,7 @@ applied to how the skills behave.
 ### Fixed
 
 - ai-knowledge: the platform notes match ai-project's platform files: ChatGPT was last checked on 2026-10-22 (the help article didn't open on 2026-10-28), Gemini notebooks are the same notebooks as in Gemini Notebook (earlier NotebookLM), and the note on retrieval with many sources is added.
+- Claude and ChatGPT platform notes say the same in ai-project and ai-knowledge: retrieval in Claude projects runs on paid plans, now including Ultra, and holds up to about 10 times more (checked 2026-11-03); ChatGPT's help doesn't say whether files are read whole or in excerpts, so both write for excerpts.
 
 ## [0.1.0] - 2026-10-28
 
