@@ -3,7 +3,7 @@
 Used for every prompt, for a question about which model or mode to use, and when adjustment rounds keep failing. Models, modes and plans change every few weeks, so a recommendation is only as good as its sources and their date; this file says how to recommend, never which model is best.
 
 ## 1. Start from what the user can use
-- The candidates are ChatGPT, Claude and Gemini. When the user fixes a vendor, choose only among its models and modes. When they name another assistant, write for it from its official guidance without comparing it to others.
+- The candidates are ChatGPT and Claude. When the user fixes a vendor, choose only among its models and modes. When they name another assistant, write for it from its official guidance without comparing it to others.
 - Recommend among what the user's plan gives them. When it isn't known, ask in the first round, with your guess as the recommended answer. Name an option outside their plan only when it meets a requirement nothing inside it can, and say what getting it costs.
 
 ## 2. State the criterion before the options

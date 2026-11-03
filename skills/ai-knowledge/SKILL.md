@@ -1,6 +1,6 @@
 ---
 name: ai-knowledge
-description: "Plans a knowledge file with the user before writing it, then writes it for how AI assistants read files: playbooks, references, profiles, guidelines and style guides, glossaries, example sets, checklists and output templates, as lean Markdown for Claude, ChatGPT and Gemini projects. Use to create, review, restructure or slim down such a file, in any language and even without those terms (e.g., 'make a glossary for the support project', 'esse manual tá grande demais pro Claude, enxuga'). Not for a whole project with its instructions, for prompts, or for simple summaries."
+description: "Plans a knowledge file with the user before writing it, then writes it for how AI assistants read files: playbooks, references, profiles, guidelines and style guides, glossaries, example sets, checklists and output templates, as lean Markdown for Claude and ChatGPT projects. Use to create, review, restructure or slim down such a file, in any language and even without those terms (e.g., 'make a glossary for the support project', 'esse manual tá grande demais pro Claude, enxuga'). Not for a whole project with its instructions, for prompts, or for simple summaries."
 ---
 
 # AI Knowledge

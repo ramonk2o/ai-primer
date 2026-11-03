@@ -1,6 +1,6 @@
 ---
 name: ai-prompt
-description: "Helps the user work out what they want from an AI assistant, then writes the prompt for it and recommends the model and mode to run it in (ChatGPT, Claude or Gemini), from current vendor docs and tested practice: one-off asks that matter, conversation openers, deep research, agent tasks, reusable templates, chains across chats and models, and fixes for prompts that misfire. Use in any language (e.g., 'write a prompt to analyze this CRM export', 'qual modelo uso pra essa pesquisa?'). Not for image, video or audio prompts, project instructions, or coding agents."
+description: "Helps the user work out what they want from an AI assistant, then writes the prompt for it and recommends the model and mode to run it in (ChatGPT or Claude), from current vendor docs and tested practice: one-off asks that matter, conversation openers, deep research, agent tasks, reusable templates, chains across chats and models, and fixes for prompts that misfire. Use in any language (e.g., 'write a prompt to analyze this CRM export', 'qual modelo uso pra essa pesquisa?'). Not for image, video or audio prompts, project instructions, or coding agents."
 ---
 
 # AI Prompt

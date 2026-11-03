@@ -1,6 +1,6 @@
 ---
 name: ai-project
-description: "Designs an AI assistant project with the user before setting it up (Claude projects, ChatGPT projects, Gemini notebooks): the requests it serves, what goes in the instructions, which files or live sources it needs and when each is used; then writes it, tests it outside the conversation and delivers the setup. Use to create, review, reorganize or port a project, in any language (e.g., 'set up a project to review our brand posts', 'my project instructions became a mess', 'passa meu projeto do ChatGPT pro Claude'). Not for a single knowledge file, prompts, or files in a code repository."
+description: "Designs an AI assistant project with the user before setting it up (Claude projects, ChatGPT projects): the requests it serves, what goes in the instructions, which files or live sources it needs and when each is used; then writes it, tests it outside the conversation and delivers the setup. Use to create, review, reorganize or port a project, in any language (e.g., 'set up a project to review our brand posts', 'my project instructions became a mess', 'passa meu projeto do ChatGPT pro Claude'). Not for a single knowledge file, prompts, or files in a code repository."
 ---
 
 # AI project
@@ -18,16 +18,16 @@ Two limits apply to everything you write: project instructions guide the assista
 
 ## Starting
 
-- **Out of scope:** doing the project's own tasks; a single knowledge file on its own (ai-knowledge covers it); a prompt, or a template reused with different inputs (ai-prompt covers it); files that live in a code repository, such as CLAUDE.md, agent configurations or code. A project whose work is maintaining software is in scope: the repository files it needs go in the plan as the project's first task, not into this skill's output. For an out-of-scope request, don't offer this skill; use the sibling when the session can load it, or handle the request without the plugin. If a request turns out midway to be one of these, say so in one line and offer to continue without the skill.
+- **Out of scope:** doing the project's own tasks; a single knowledge file on its own (ai-knowledge covers it); a prompt, or a template reused with different inputs (ai-prompt covers it); files that live in a code repository, such as CLAUDE.md, agent configurations or code; a project for a platform other than Claude or ChatGPT (a Gemini notebook, for example). A project whose work is maintaining software is in scope: the repository files it needs go in the plan as the project's first task, not into this skill's output. For an out-of-scope request, don't offer this skill; use the sibling when the session can load it, or handle the request without the plugin. If a request turns out midway to be one of these, say so in one line and offer to continue without the skill.
 - **Called by name:** start the Opening.
 - **Started by the subject of the request:** the first reply only offers the skill. In two or three sentences, say what it does differently (designs the requests, the instructions and the sources before writing anything) and what it costs (a few rounds of questions, or one proposal and one approval on the light path), then ask whether to plan with it, with your recommended answer and a one-line reason. Nothing else yet, since the answer changes everything that follows.
 - **Accepted:** start the Opening. **Declined:** handle the request without the skill and don't offer it again in this conversation.
 
 ## Destinations
 
-Claude is the reference design: the files and the logic of the instructions follow how Claude reads a project, and the other destinations adapt form, setup and tests. Read the platform file for each destination when designing the architecture and when delivering: `references/platforms/claude.md`, `chatgpt.md` or `gemini.md`. With more than one destination, keep one set of files and write one instructions file per destination.
+Claude is the reference design: the files and the logic of the instructions follow how Claude reads a project, and ChatGPT adapts form, setup and tests. Read the platform file for each destination when designing the architecture and when delivering: `references/platforms/claude.md` or `chatgpt.md`. With both destinations, keep one set of files and write one instructions file per destination.
 
-Take the destination from the request or the context; if it is unclear, it is the first question. Don't infer it from where this skill runs: building a ChatGPT project from Claude is common.
+Take the destination from the request or the context; if it is unclear, it is the first question. Don't infer it from where this skill runs: building a ChatGPT project from Claude is common. A project on another platform can still be the source of a port: read it as material. When only some of the destinations are Claude or ChatGPT, design for those and say the others aren't covered.
 
 Platform facts (limits, plans, memory, sharing, screens) live only in the platform files, with their sources and the date of the last check. Before stating a number or a setting to the user, check the official page if the session can browse; otherwise say the fact dates from that check and needs confirming.
 
