@@ -32,7 +32,7 @@ Used when Gemini is a destination: in the architecture, the instructions and the
 
 ## Writing instructions for Gemini
 - Google recommends direct, concise instructions without persuasive or emphatic language, ambiguous terms defined, and one structure used consistently.
-- Put the role, the constraints and the output format first. Gemini tends toward short answers; if the project needs detailed or conversational ones, say so.
+- Put what the project is for and who uses it, the constraints and the output format first. Describe the work and its methods rather than giving the model a role. Gemini tends toward short answers; if the project needs detailed or conversational ones, say so.
 
 ## Consequences for the design
 - Knowledge the team edits often can live in Google Drive as Google Docs, as a live source; otherwise Markdown files work as on the other platforms.

@@ -21,7 +21,7 @@ AI Primer's skills help people write what LLMs read: prompts, project instructio
 
 ## Building a skill
 
-9. **Each skill stands alone.** A skill can be installed on its own and reads nothing outside its folder, so it carries every shared rule it needs in full. A shared rule is changed in every skill that states it, in the same branch.
+9. **Each skill stands alone.** A skill can be installed on its own and reads nothing outside its folder, so it carries every shared rule it needs in full. A shared rule is changed in every skill that states it, in the same branch. The same goes for platform facts: ai-project's `references/platforms/` holds them in full and ai-knowledge's `references/platforms.md` summarizes them, with the same numbers and check dates.
 10. **A lean core.** `SKILL.md` loads in full on every activation, so it holds only the flow and the rules every phase needs, in under about 5,000 tokens; what a single step uses lives in `references/`. The description, under about 600 characters, says when to use the skill and when not to.
 11. **Capabilities, not tool names.** A skill describes what the session can do ("if the session can start an agent") instead of naming tools or products, which change across Claude surfaces. What it knows about target platforms lives in `references/` and is checked against current documentation before use, because it goes stale.
 12. **English inside, the user's language outside.** Skills, references and every file in the repo are written in English; the skills talk to the user in the user's language.
