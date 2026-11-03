@@ -93,7 +93,7 @@ In the full path, continue until these are clear; the detail of each file is gat
 
 ```
 PROJECT PLAN — [name]
-Path: full | light · Destination: … · Shared: no | yes, with …
+Path: full | light · Destination: … · Size: read whole | searched · Shared: no | yes, with …
 Purpose: … · For: … · Not for: …
 Use cases
 1. … (common)  2. … (combines sources)  3. … (missing data or ambiguous)
@@ -101,14 +101,14 @@ Instructions — written as they will appear:
   [requirements indispensable to every task, each with its reason]
   [the lines saying when to use each source]
 Files (none is a valid answer)
-1. [file-name.md] — role — used when … — source | gap
+1. [file-name.md] — [type] — role — used when … — source | gap — updated by … — now | later
 Live sources: [where] — fetched when … — needs: [connection]
 Stays in the chat: …
 Setup: memory, sharing … · Name / description: … / …
 Pending [TO CONFIRM]: …
 ```
 
-Ask for explicit approval. Pending items are resolved first or, if the user agrees, go into the files marked `[TO CONFIRM]`.
+On a file line, leave out "updated by" when the file won't change, and "now | later" when every file is needed now. Ask for explicit approval. Pending items are resolved first or, if the user agrees, go into the files marked `[TO CONFIRM]`.
 
 ## Files
 
