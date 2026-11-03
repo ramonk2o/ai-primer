@@ -13,7 +13,7 @@ On the full path, answer four questions for the task's field and bring the answe
 ## What never counts as a source
 - "Best prompts" and "hacks" lists, affiliate pages, and pages that sell one of the options.
 - The model's memory for any name, version, limit or price.
-- Tricks with no shown result, especially those aimed at older models (threats, rewards, a role in place of a method such as "you are an expert analyst", "think step by step" for a reasoning mode, capital letters for emphasis): they can make current models worse.
+- Tricks with no shown result, especially those aimed at older models (threats, rewards, a role standing in for the method, such as "you are an expert analyst" with nothing on how to work, "think step by step" for a reasoning mode, capital letters for emphasis): they can make current models worse.
 
 ## Keep it proportionate
 - A few pages: one or two official pages for the target, and a few for the goal, fewer on the light path. The aim is the requirements checked, not a survey.
