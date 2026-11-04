@@ -64,7 +64,7 @@ When the project's knowledge nears the context limit, the model reads short retr
 
 ## Examples and literal text
 
-- Use examples when they show what a rule can't say alone (tone, level of detail, a format), or when they are the file's subject.
+- Use examples when they show what a rule can't say alone (tone, level of detail, a format), or when they are the file's subject. Leave them out where the assistant does open work (ideas, strategy, analysis): current models stay close to the examples they are shown, so there they narrow the answers instead of guiding them.
 - Show input and output pairs, varied in length, topic and structure so the model doesn't copy a surface pattern. Three to five usually teach more than one or ten.
 - Say what each example illustrates, and make sure every behavior an example shows is also stated as a rule.
 - Label synthetic examples as such; never present them as real cases or real data.
