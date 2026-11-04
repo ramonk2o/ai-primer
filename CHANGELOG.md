@@ -8,6 +8,10 @@ applied to how the skills behave.
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-11-04
+
+This version removes Gemini support, which breaks use for anyone who relied on it.
+
 ### Changed
 
 - ai-prompt: prompts ask for the methods, tools and raw material a leading professional would use, and for an outside check of the result; a one-line role may still open the prompt, as Anthropic's prompting guidance recommends, but never in place of the methods; the full path's Prompt plan shows these as proposals, and the light path applies them in the draft. Adapted from Felix Rieseberg's "How to be more ambitious: A tutorial for humans with models" (October 2026).
