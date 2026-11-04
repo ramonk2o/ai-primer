@@ -13,7 +13,7 @@ Used when ChatGPT is a destination: in the architecture, the instructions and th
 ## Files
 - Each project has a file cap that depends on the plan. At the last check: 5 on Free, 25 on Go and Plus, 40 on Pro, Business, Enterprise and Edu, with up to 10 files uploaded at a time.
 - If the cap gets tight, combine files used together, or split the work into separate projects.
-- Retrieval of excerpts is managed by the product; don't assume a full reading.
+- The help article doesn't say whether files are read whole or retrieved in excerpts; write them for excerpts.
 
 ## Live sources
 - At the 2026-10-22 check, private projects could add Slack channels and Google Drive files or folders as sources by pasting links; older versions of the page said connectors weren't supported in projects. Confirm on the page, or with the user, before designing a live source for ChatGPT. If none works, the knowledge goes in as files, with the person who updates them named in the plan.

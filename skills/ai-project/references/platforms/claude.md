@@ -1,6 +1,6 @@
 # Claude projects
 
-Used when Claude is a destination: in the architecture, the instructions and the delivery. Last checked 2026-10-28 in the Claude Help Center: [Create and manage projects](https://support.claude.com/en/articles/9519177) and [RAG for Projects](https://support.claude.com/en/articles/11473015-retrieval-augmented-generation-rag-for-projects). Plans, numbers and screens change; check these pages before quoting them, and update this date when you revise the file.
+Used when Claude is a destination: in the architecture, the instructions and the delivery. Last checked 2026-10-28 in the Claude Help Center: [Create and manage projects](https://support.claude.com/en/articles/9519177) and [RAG for Projects](https://support.claude.com/en/articles/11473015-retrieval-augmented-generation-rag-for-projects), checked again 2026-11-03. Plans, numbers and screens change; check these pages before quoting them, and update this date when you revise the file.
 
 ## Creation screen
 - The user creates the project with a name and a description. On Team and Enterprise plans, the screen can also set whether the project is private or visible to the organization, when admins allow it.
@@ -14,7 +14,7 @@ Used when Claude is a destination: in the architecture, the instructions and the
 ## Project knowledge
 - Documents, text files and code can be added, and everything added is used across the project's chats. No size or count limit is published.
 - While it fits, project knowledge is loaded whole into every chat, so repetition across files is noise and a risk of conflict.
-- As it nears the context limit, paid plans (Pro, Max, Team and Enterprise at the last check) switch to retrieval on their own, with a visual indicator: Claude searches the files and reads excerpts. The user can't turn this on or off, and it switches back if the knowledge shrinks.
+- As it nears the context limit, paid plans (Pro, Max, Ultra, Team and Enterprise at the last check) switch to retrieval on their own, with a visual indicator: Claude searches the files and reads excerpts, and the project holds up to about 10 times more. The user can't turn this on or off, and it switches back if the knowledge shrinks.
 - Anthropic recommends descriptive file names and citing documents by name in requests, because both improve that search. Include one test request that names a file when the knowledge is large.
 
 ## Live sources

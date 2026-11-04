@@ -20,6 +20,7 @@ applied to how the skills behave.
 - ai-knowledge: the platform notes match ai-project's platform files: ChatGPT was last checked on 2026-10-22, since the help article didn't open on 2026-10-28.
 - ai-project: the Project plan gives the project's size (read whole or searched in excerpts) and, for each file, its type, who updates it and whether it is needed now or later, as the architecture step already asked; ai-prompt: the Prompt plan has a line for the output format.
 - ai-project and ai-knowledge describe the handover of a knowledge file with the same list on both sides (adding the project's size, the use cases the file serves, its type, who updates it and where to save it), and say that the handed file follows the project's path and is tested and delivered with the whole project, not on its own.
+- Claude and ChatGPT platform notes say the same in ai-project and ai-knowledge: retrieval in Claude projects runs on paid plans, now including Ultra, and holds up to about 10 times more (checked 2026-11-03); ChatGPT's help doesn't say whether files are read whole or in excerpts, so both write for excerpts.
 
 ### Removed
 
