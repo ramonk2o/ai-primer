@@ -14,6 +14,10 @@ applied to how the skills behave.
 - The README points Claude apps users to each skill's zip in the latest release instead of asking them to zip the folder.
 - Release flow: every release on GitHub carries a zip of each skill, and the session delivers them when it can't create the release itself.
 - ai-prompt: when the session can't start an agent, the user runs the executor and the judge in two separate new conversations, as principle 8 says; the judge no longer runs in the planning conversation, and `SKILL.md` and `references/cold-executor.md` now agree on this.
+- ai-prompt: when the session can't start an agent, the user runs the executor in a new conversation and the skill judges the answer itself, saying the judge wasn't independent; `SKILL.md` and `references/cold-executor.md` no longer disagree on this.
+- ai-knowledge and ai-project: a light-path request whose material is in the message gets the light proposal in the first reply instead of a turn spent offering the skill, as ai-prompt already did; principle 2 says so.
+- All three skills: when the user declines the skill or asks for just the result, it skips the rounds, gate and test but still writes by its rules, marking gaps instead of inventing them, instead of leaving the skill.
+- ai-prompt: on the light path, the target is looked up only when the recommendation or the prompt depends on it; when the user already fixed where it runs, the draft comes without browsing.
 
 ### Fixed
 

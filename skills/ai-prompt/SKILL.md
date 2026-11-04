@@ -9,7 +9,7 @@ A prompt usually fails before its wording does: the user hadn't settled what the
 
 ```
 Full:   Opening (rounds) → Plan → [GATE: Prompt plan] → Write → Test → Deliver
-Light:  Research → Prompt plan with the draft, in one proposal → [GATE] → Deliver (test offered)
+Light:  Research when needed → Prompt plan with the draft, in one proposal → [GATE] → Deliver (test offered)
 Model:  Research → choice, reason and cost in a few lines
 ```
 
@@ -22,7 +22,7 @@ Talk to the user in their language, and write the Prompt plan in it; its labels 
 - **Only which model or mode to use:** answer directly, as "Where it runs" says, in a few lines; offer the prompt in one line.
 - **Started by the subject, for a one-off ask or a conversation opener:** don't spend a turn offering. The first reply is the light path's proposal, with one line above it saying what the skill adds (the goal made explicit, a model and mode chosen from current docs, a prompt written for that target) and that the user can ask for just the prompt.
 - **Started by the subject, for anything else:** the first reply only offers the skill, in two or three sentences: what it does differently (works out what a good result is, picks where to run it, tests the prompt before the real run), what it costs (a few rounds and one approval), and whether to use it, with your recommendation and a one-line reason.
-- **Accepted:** start the Opening. **Declined**, or asked for just the prompt: leave the skill, with none of its rounds, gates or test, and don't offer it again in this conversation.
+- **Accepted:** start the Opening. **Declined**, or asked for just the prompt: skip the rounds, the gate and the test, and write the prompt in the next reply, still following `references/writing.md` for the target, with every missing fact as a visible `[placeholder]`, and one line on what wasn't settled. Don't offer the skill again in this conversation.
 
 ## Cases and modes
 
@@ -42,11 +42,11 @@ Then the mode:
 
 **Full** — templates, deep research, agent tasks, chains, and any prompt whose result goes to a client or into a decision. Rounds, the Prompt plan gate, writing and the test.
 
-**Light** — one-off asks and conversation openers otherwise, and a fix to a single prompt. After the research, the first reply brings the short Prompt plan with the complete prompt as its draft, any missing fact as a `[placeholder]`, and at most three questions: the goal first when it is in real doubt (see "What the user wants"), then the path, recommending light and naming what would make it full, then the user's access when the target is open. Answers that only fill placeholders or adjust wording approve the prompt and the next reply delivers it; answers that change the goal or the target reopen the draft. The draft uses the four questions in `references/research.md` without adding one for the user. The test is offered in one line. If the stakes rise or a step appears that feeds another, suggest switching to full.
+**Light** — one-off asks and conversation openers otherwise, and a fix to a single prompt. After any research it needs (see `references/research.md`), the first reply brings the short Prompt plan with the complete prompt as its draft, any missing fact as a `[placeholder]`, and at most three questions: the goal first when it is in real doubt (see "What the user wants"), then the path, recommending light and naming what would make it full, then the user's access when the target is open. Answers that only fill placeholders or adjust wording approve the prompt and the next reply delivers it; answers that change the goal or the target reopen the draft. The draft uses the four questions in `references/research.md` without adding one for the user. The test is offered in one line. If the stakes rise or a step appears that feeds another, suggest switching to full.
 
 ## How to run it
 
-**No prompt before the gate.** In the full path the prompt is written only after the Prompt plan is approved, because a prompt written early anchors the conversation to its wording instead of to the result; in the light path the draft is part of the plan. If the user asks to skip ahead, say in one sentence what the plan gains and offer the light path; if they insist, the decision is theirs, and you leave the skill.
+**No prompt before the gate.** In the full path the prompt is written only after the Prompt plan is approved, because a prompt written early anchors the conversation to its wording instead of to the result; in the light path the draft is part of the plan. If the user asks to skip ahead, say in one sentence what the plan gains and offer the light path; if they insist, the decision is theirs: write it as "Declined" says.
 
 **Rounds, always with your answer.** Each message brings up to five numbered questions, each with the answer you recommend and a one-line reason, so the user only confirms or corrects.
 
@@ -86,7 +86,7 @@ In the full path, the first reply says in one sentence how it will work (settle 
 
 **The target decides the form.** Identify the app, model and mode from the request or the context, and where the prompt lands: a new chat, a project with its own instructions (read them if the user has them, so the prompt doesn't repeat or contradict them), or an earlier step's chat. Don't infer the target from where this skill runs: writing here for another vendor's app is common. When the user fixes the vendor, choose only the model and mode within it.
 
-**Recommend one.** Read `references/model-choice.md` and follow it for every prompt and for a model-only question. Read `references/research.md` before recommending or writing: what you look up there, and its date, goes into the plan. Never write a model, mode, limit or price from memory.
+**Recommend one.** Read `references/model-choice.md` and follow it for every prompt and for a model-only question. Read `references/research.md` before recommending or writing (on the light path it says when to skip the lookup): what you look up there, and its date, goes into the plan. Never write a model, mode, limit or price from memory.
 
 ## Plan
 

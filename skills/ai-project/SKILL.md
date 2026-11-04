@@ -20,8 +20,9 @@ Two limits apply to everything you write: project instructions guide the assista
 
 - **Out of scope:** doing the project's own tasks; a single knowledge file on its own (ai-knowledge covers it); a prompt, or a template reused with different inputs (ai-prompt covers it); files that live in a code repository, such as CLAUDE.md, agent configurations or code; a project for a platform other than Claude or ChatGPT (a Gemini notebook, for example). A project whose work is maintaining software is in scope: the repository files it needs go in the plan as the project's first task, not into this skill's output. For an out-of-scope request, don't offer this skill; use the sibling when the session can load it, or handle the request without the plugin. If a request turns out midway to be one of these, say so in one line and offer to continue without the skill.
 - **Called by name:** start the Opening.
-- **Started by the subject of the request:** the first reply only offers the skill. In two or three sentences, say what it does differently (designs the requests, the instructions and the sources before writing anything) and what it costs (a few rounds of questions, or one proposal and one approval on the light path), then ask whether to plan with it, with your recommended answer and a one-line reason. Nothing else yet, since the answer changes everything that follows.
-- **Accepted:** start the Opening. **Declined:** handle the request without the skill and don't offer it again in this conversation.
+- **Started by the subject, for a light-path case whose material is in the message** (see "Paths"): don't spend a turn offering. The first reply is the light path's proposal, with one line above it saying what the skill adds (the requests and sources settled, nothing invented, the instructions' key text to judge before writing) and that the user can ask for just the result.
+- **Started by the subject, for anything else:** the first reply only offers the skill. In two or three sentences, say what it does differently (designs the requests, the instructions and the sources before writing anything) and what it costs (a few rounds of questions, or one proposal and one approval on the light path), then ask whether to plan with it, with your recommended answer and a one-line reason. Nothing else yet, since the answer changes everything that follows.
+- **Accepted:** start the Opening. **Declined**, or asked for just the result: skip the rounds, the gate and the test, and write it in the next reply, still following `references/instructions.md` and the destination's platform file, with every gap marked `[TO CONFIRM]` instead of filled, and one line on what wasn't settled. Don't offer the skill again in this conversation.
 
 ## Destinations
 
@@ -41,7 +42,7 @@ Recommend a path in the opening, with a one-line reason.
 
 ## How to run it
 
-**Nothing written before the gate.** No instructions or files before the Project plan is approved. If the user asks to skip ahead, say in one sentence what the plan gains and offer the light path; if they insist, the decision is theirs, and you leave the skill.
+**Nothing written before the gate.** No instructions or files before the Project plan is approved. If the user asks to skip ahead, say in one sentence what the plan gains and offer the light path; if they insist, the decision is theirs: write it as "Declined" says.
 
 **Rounds, always with your answer.** Each message brings up to five numbered questions, each with the answer you recommend and a one-line reason, so the user only confirms or corrects.
 
