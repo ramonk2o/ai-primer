@@ -1,6 +1,6 @@
 # Research before writing
 
-Used before recommending a model or mode and before writing any prompt, and again when the target changes. What you read, with its date, goes into the Prompt plan's "Run in" line.
+Used before recommending a model or mode and before writing any prompt, and again when the target changes; on the light path, only as "Light path" below says. What you read, with its date, goes into the Prompt plan's "Run in" line.
 
 ## Two layers, kept apart
 
@@ -9,6 +9,9 @@ Used before recommending a model or mode and before writing any prompt, and agai
 **Practice for the goal.** How people get good results for this kind of task (a contract review, a monthly CRM analysis, a literature scan): structures, criteria, inputs that help, common failures. Prefer the vendors' own cookbooks and guides, published evaluations, and practitioners who show the prompt with its result. Mark these as independent and treat each as a hypothesis: it enters the prompt only if it serves a statement of the goal, and the test checks it. When the guidance and a tip disagree, follow the guidance and say so.
 
 On the full path, answer four questions for the task's field and bring the answers to the plan as proposals: what a leading professional would do here that the request doesn't ask for; the rawest material they would start from instead of a digested version; the specific methods and tools they would use; and what, other than the user or the model, would show the result is right. Keep only what serves a statement of the goal and what the target can reach. On the light path, apply them in the draft without adding a question.
+
+## Light path
+Look up the target only when something depends on it: the user hasn't fixed the app and model, or the prompt relies on a feature, setting, limit or price. When the user already said where it runs and the prompt uses nothing specific to it, write from `writing.md` and the case file, and the plan's "Run in" line says the target came from the user and nothing was looked up. Look up practice for the goal only when the kind of task is one where a known structure or failure would change the draft.
 
 ## What never counts as a source
 - "Best prompts" and "hacks" lists, affiliate pages, and pages that sell one of the options.

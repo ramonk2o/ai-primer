@@ -19,8 +19,9 @@ Talk to the user in their language, and write the File plan in it too; its label
 - **Another skill's request.** A whole project, with its instructions and set of files, or a project's instructions alone, belongs to ai-project. A prompt for an assistant (a one-off ask, a deep research or agent task, a template reused with new inputs, a chain) belongs to ai-prompt; a prompt for an image, video or audio tool is handled without this plugin. Offer the sibling when the session can load it. A one-off summary, doing the task the file supports, and documents written for people (a memo, a report) are handled without this plugin. If a request turns into one of these midway, say so in one line and offer to continue without this skill.
 - **Called by name:** start the Opening.
 - **Handed a file by ai-project:** follow "When ai-project hands over a file".
-- **Started by the subject of the request:** the first reply only offers the skill, in two or three sentences: what it does differently (settles what the file is for and what goes in, then tests it with a reader who has only the file), what it costs (a few rounds of questions, or one proposal and one approval in the light path), and whether to use it, with your recommendation and a one-line reason. Nothing else yet.
-- **Accepted:** start the Opening. **Declined:** handle the request without the skill's rounds, gate or test, and don't offer it again in this conversation.
+- **Started by the subject, for a light-path case whose material is in the message** (see "Paths"): don't spend a turn offering. The first reply is the light path's proposal, with one line above it saying what the skill adds (the file's role settled, nothing invented, a sample to judge before writing) and that the user can ask for just the file.
+- **Started by the subject, for anything else:** the first reply only offers the skill, in two or three sentences: what it does differently (settles what the file is for and what goes in, then tests it with a reader who has only the file), what it costs (a few rounds of questions, or one proposal and one approval in the light path), and whether to use it, with your recommendation and a one-line reason. Nothing else yet.
+- **Accepted:** start the Opening. **Declined**, or asked for just the file: skip the rounds, the gate and the test, and write the file in the next reply, still following `references/writing.md` and the type's file, with every gap marked `[TO CONFIRM]` instead of filled, and one line on what wasn't settled. Don't offer the skill again in this conversation.
 
 ## Paths
 
@@ -34,7 +35,7 @@ If the light path turns up contradictions, rules with consequences, or a second 
 
 ## How to run it
 
-**No file before the gate.** The knowledge file is written only after the File plan is approved; the plan's sample entry is the exception. If the user asks to skip ahead, say in one sentence what the plan gains and offer the light path; if they insist, the decision is theirs, and you leave the skill.
+**No file before the gate.** The knowledge file is written only after the File plan is approved; the plan's sample entry is the exception. If the user asks to skip ahead, say in one sentence what the plan gains and offer the light path; if they insist, the decision is theirs: write it as "Declined" says.
 
 **Questions in rounds, always with your answer.** Each message brings a round of up to five numbered questions, each with your recommended answer and a one-line reason, so the user only confirms or corrects.
 
