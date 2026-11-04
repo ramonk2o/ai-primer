@@ -31,5 +31,5 @@ Used in the Architecture step, to decide what goes in the instructions, the know
 ## Small and large projects
 
 - **Read whole** (a small Claude project, or a few short files): the model sees every file in every chat, so the instructions say which file governs which kind of task and which wins when two apply. Avoid overlap more than you save space.
-- **Searched in excerpts** (a large Claude project in retrieval mode, ChatGPT files, a notebook with many sources): the instructions say when to open each file, by name, and each section must stand on its own, since the model may see only that part.
+- **Searched in excerpts** (a large Claude project in retrieval mode, ChatGPT files): the instructions say when to open each file, by name, and each section must stand on its own, since the model may see only that part.
 - When unsure, write for excerpts: it also works when the files are read whole.

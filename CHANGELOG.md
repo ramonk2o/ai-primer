@@ -13,12 +13,15 @@ applied to how the skills behave.
 - ai-prompt: prompts ask for the methods, tools and raw material a leading professional would use, and for an outside check of the result, instead of giving the model a role; the full path's Prompt plan shows these as proposals, and the light path applies them in the draft. Adapted from Felix Rieseberg's "How to be more ambitious: A tutorial for humans with models" (October 2026).
 - The README points Claude apps users to each skill's zip in the latest release instead of asking them to zip the folder.
 - Release flow: every release on GitHub carries a zip of each skill, and the session delivers them when it can't create the release itself.
-- ai-project: instructions for Gemini open with what the project is for and who uses it instead of a role, in line with ai-prompt.
 - ai-prompt: when the session can't start an agent, the user runs the executor in a new conversation and the skill judges the answer itself, saying the judge wasn't independent; `SKILL.md` and `references/cold-executor.md` no longer disagree on this.
 
 ### Fixed
 
-- ai-knowledge: the platform notes match ai-project's platform files: ChatGPT was last checked on 2026-10-22 (the help article didn't open on 2026-10-28), Gemini notebooks are the same notebooks as in Gemini Notebook (earlier NotebookLM), and the note on retrieval with many sources is added.
+- ai-knowledge: the platform notes match ai-project's platform files: ChatGPT was last checked on 2026-10-22, since the help article didn't open on 2026-10-28.
+
+### Removed
+
+- Gemini support. ai-prompt no longer considers Gemini when recommending a model and mode, and writes for it only as for any other assistant the user names, from its official guidance. ai-project designs Claude and ChatGPT projects only: a project for another platform is out of scope, though one can still be ported from it. ai-knowledge drops its Gemini notebook notes and keeps writing portable Markdown.
 
 ## [0.1.0] - 2026-10-28
 

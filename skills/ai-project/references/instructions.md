@@ -60,5 +60,3 @@ When writing or reviewing copy, `brand-voice.md` governs tone, vocabulary and th
 ```
 
 **ChatGPT.** Markdown headings for purpose, behavior, when to use the files, and gaps; explicit "When X, do Y" conditions.
-
-**Gemini.** What the project is for and who uses it, the constraints and the output format first; direct and concise, with ambiguous terms defined, and one structure throughout (Markdown headings or XML-style tags, not both). Say when web search is allowed and when only the notebook's sources count. If the project needs detailed or conversational answers, ask for them, because Gemini tends toward short ones.
