@@ -14,10 +14,11 @@ applied to how the skills behave.
 - The README points Claude apps users to each skill's zip in the latest release instead of asking them to zip the folder.
 - Release flow: every release on GitHub carries a zip of each skill, and the session delivers them when it can't create the release itself.
 - ai-prompt: when the session can't start an agent, the user runs the executor and the judge in two separate new conversations, as principle 8 says; the judge no longer runs in the planning conversation, and `SKILL.md` and `references/cold-executor.md` now agree on this.
-- ai-prompt: when the session can't start an agent, the user runs the executor in a new conversation and the skill judges the answer itself, saying the judge wasn't independent; `SKILL.md` and `references/cold-executor.md` no longer disagree on this.
 - ai-knowledge and ai-project: a light-path request whose material is in the message gets the light proposal in the first reply instead of a turn spent offering the skill, as ai-prompt already did; principle 2 says so.
 - All three skills: when the user declines the skill or asks for just the result, it skips the rounds, gate and test but still writes by its rules, marking gaps instead of inventing them, instead of leaving the skill.
 - ai-prompt: on the light path, the target is looked up only when the recommendation or the prompt depends on it; when the user already fixed where it runs, the draft comes without browsing.
+
+- ai-prompt: `references/handoff.md` is now `references/delivery.md`, the name ai-project uses; ai-project's rule on the test calls its reader the cold reader and its skipped-test note "Cold reader: not run", as its delivery template does.
 
 ### Fixed
 
@@ -27,7 +28,6 @@ applied to how the skills behave.
 - Claude and ChatGPT platform notes say the same in ai-project and ai-knowledge: retrieval in Claude projects runs on paid plans, now including Ultra, and holds up to about 10 times more (checked 2026-11-03); ChatGPT's help doesn't say whether files are read whole or in excerpts, so both write for excerpts.
 - On the light path of all three skills, answers that only fill gaps or adjust wording approve the plan, as ai-prompt already said, so the user isn't asked to approve twice; the rule on gates says so too.
 - ai-prompt: the light path points to the "four questions" in `references/research.md` by the name that file uses.
-- ai-prompt: `references/handoff.md` is now `references/delivery.md`, the name ai-project uses; ai-project's rule on the test calls its reader the cold reader and its skipped-test note "Cold reader: not run", as its delivery template does.
 - README: says that updates aren't automatic for this marketplace by default, and how to update or turn auto-update on, instead of promising updates on release.
 
 ### Removed
