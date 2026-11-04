@@ -5,11 +5,11 @@ description: "Helps the user work out what they want from an AI assistant, then 
 
 # AI Prompt
 
-A prompt usually fails before its wording does: the user hadn't settled what they wanted, so the prompt leaves the real decisions to the model; it runs in a model or mode that doesn't fit the job; it follows tricks that no longer help current models; or it is long and contradicts itself. So this skill first helps the user work out what they want, then recommends where to run it, reads that target's current guidance, writes a lean prompt for it and tests it by what it produces.
+A prompt usually fails before its wording does: the user hadn't settled what they wanted, so the prompt leaves the real decisions to the model; it runs in a model or mode that doesn't fit the job; it follows tricks that no longer help current models; or it is long and contradicts itself. So this skill first helps the user work out what they want, then recommends where to run it, reads that target's current guidance, writes a lean prompt for it and hands over a checklist to judge the first real run, which is the test.
 
 ```
-Full:   Opening (rounds) → Plan → [GATE: Prompt plan] → Write → Test → Deliver
-Light:  Research when needed → Prompt plan with the draft, in one proposal → [GATE] → Deliver (test offered)
+Full:   Opening (rounds) → Plan → [GATE: Prompt plan] → Write → Deliver → Real run
+Light:  Research when needed → Prompt plan with the draft, in one proposal → [GATE] → Deliver → Real run
 Model:  Research → choice, reason and cost in a few lines
 ```
 
@@ -21,8 +21,8 @@ Talk to the user in their language, and write the Prompt plan in it; its labels 
 - **Called by name:** start the Opening.
 - **Only which model or mode to use:** answer directly, as "Where it runs" says, in a few lines; offer the prompt in one line.
 - **Started by the subject, for a one-off ask or a conversation opener:** don't spend a turn offering. The first reply is the light path's proposal, with one line above it saying what the skill adds (the goal made explicit, a model and mode chosen from current docs, a prompt written for that target) and that the user can ask for just the prompt.
-- **Started by the subject, for anything else:** the first reply only offers the skill, in two or three sentences: what it does differently (works out what a good result is, picks where to run it, tests the prompt before the real run), what it costs (a few rounds and one approval), and whether to use it, with your recommendation and a one-line reason.
-- **Accepted:** start the Opening. **Declined**, or asked for just the prompt: skip the rounds, the gate and the test, and write the prompt in the next reply, still following `references/writing.md` for the target, with every missing fact as a visible `[placeholder]`, and one line on what wasn't settled. Don't offer the skill again in this conversation.
+- **Started by the subject, for anything else:** the first reply only offers the skill, in two or three sentences: what it does differently (works out what a good result is, picks where to run it, gives a checklist to judge the real run), what it costs (a few rounds and one approval), and whether to use it, with your recommendation and a one-line reason.
+- **Accepted:** start the Opening. **Declined**, or asked for just the prompt: skip the rounds and the gate, and write the prompt in the next reply, still following `references/writing.md` for the target, with every missing fact as a visible `[placeholder]`, and one line on what wasn't settled. Don't offer the skill again in this conversation.
 
 ## Cases and modes
 
@@ -40,9 +40,9 @@ Then the mode:
 
 ## Paths
 
-**Full** — templates, deep research, agent tasks, chains, and any prompt whose result goes to a client or into a decision. Rounds, the Prompt plan gate, writing and the test.
+**Full** — templates, deep research, agent tasks, chains, and any prompt whose result goes to a client or into a decision. Rounds, the Prompt plan gate and writing.
 
-**Light** — one-off asks and conversation openers otherwise, and a fix to a single prompt. After any research it needs (see `references/research.md`), the first reply brings the short Prompt plan with the complete prompt as its draft, any missing fact as a `[placeholder]`, and at most three questions: the goal first when it is in real doubt (see "What the user wants"), then the path, recommending light and naming what would make it full, then the user's access when the target is open. Answers that only fill placeholders or adjust wording approve the prompt and the next reply delivers it; answers that change the goal or the target reopen the draft. The draft uses the four questions in `references/research.md` without adding one for the user. The test is offered in one line. If the stakes rise or a step appears that feeds another, suggest switching to full.
+**Light** — one-off asks and conversation openers otherwise, and a fix to a single prompt. After any research it needs (see `references/research.md`), the first reply brings the short Prompt plan with the complete prompt as its draft, any missing fact as a `[placeholder]`, and at most three questions: the goal first when it is in real doubt (see "What the user wants"), then the path, recommending light and naming what would make it full, then the user's access when the target is open. Answers that only fill placeholders or adjust wording approve the prompt and the next reply delivers it; answers that change the goal or the target reopen the draft. The draft uses the four questions in `references/research.md` without adding one for the user. If the stakes rise or a step appears that feeds another, suggest switching to full.
 
 ## How to run it
 
@@ -65,7 +65,7 @@ Order by risk: first what, if wrong, changes the result most. A question whose a
 
 **A gate is explicit approval.** "OK", "approved", "go ahead" count; silence, a change of subject or approving a round's answers do not, except on the light path, as it says. After the gate the Prompt plan is closed: writing doesn't change what it decided without asking, and later changes are written back into it.
 
-**Tested by someone who wasn't here.** A model inside this conversation already knows what the prompt meant to ask, so never play the executor or the judge yourself. If the session can start separate agents, give each only what `references/cold-executor.md` says; otherwise give the user that file's two prompts, each for its own new conversation, as it says. A test never sends, buys, posts, deletes or changes anything. If the user skips it, the delivery says "Test: not run".
+**The real run is the test.** The skill doesn't run or judge the prompt itself: a model inside this conversation already knows what the prompt meant to ask, and only the target, on real input, shows what it does. The delivery carries the goal's statements as a checklist for the user's first run, and the user brings back a result that misses one.
 
 ## Materials
 
@@ -80,7 +80,7 @@ The prompt is only as clear as the goal behind it, so the Opening settles the go
 
 When the goal is vague, propose instead of asking openly: two or three readings of what the user may want, or a short sketch of the answer's shape (its structure and one passage, not the task done), so the user can say "that" or "not that". Question the goal itself only when something points to it: the result asked for won't get the user where they said they want to go, nobody uses it, or the request contradicts itself. Then say so in the first round, with what would work instead, which may be no prompt at all (a mode to turn on, a project for recurring work, a conversation to think the problem through first, perhaps as step 1 of a chain). When nothing points to it, don't ask.
 
-In the full path, the first reply says in one sentence how it will work (settle what you want and where to run it, write, test before the real run), brings a reading of the material or a starting point, and opens a round with the goal's gaps and the path. Rounds continue until the goal, the good result, the target and the runs are clear; then the Plan comes in one message.
+In the full path, the first reply says in one sentence how it will work (settle what you want and where to run it, write, then judge the first real run against a checklist), brings a reading of the material or a starting point, and opens a round with the goal's gaps and the path. Rounds continue until the goal, the good result, the target and the runs are clear; then the Plan comes in one message.
 
 ## Where it runs
 
@@ -91,7 +91,7 @@ In the full path, the first reply says in one sentence how it will work (settle 
 ## Plan
 
 Bring in one message:
-- **The goal:** the result, its use, and three to five statements a result can be checked against, at least one a failure to avoid; the test judges them, so someone with only the result must be able to answer yes or no.
+- **The goal:** the result, its use, and three to five statements a result can be checked against, at least one a failure to avoid; they become the checklist for the real run, so someone with only the result must be able to answer yes or no.
 - **Where it runs,** from `references/model-choice.md`, with sources and date; where it lands.
 - **Left to the model:** the decisions the prompt states as the model's call.
 - **Inputs:** what the prompt receives each run, with variable names for a template.
@@ -115,7 +115,6 @@ Settings in the app: … · Output format: … · Exclusions: …
 Prompt shape: [parts] · about [length] · language: …
 Chain: 1. [step] — [runs in] — passes [what] → check …
 Diagnosis: [cause] → [change]
-Test: executor + judge | offered
 Pending [TO CONFIRM]: …
 ```
 
@@ -125,12 +124,10 @@ Leave out the lines that don't apply. In the light path the goal fits on one lin
 
 Treat the Prompt plan as the specification. Read `references/writing.md` and follow it with the case file and the target's guidance; for a chain, write every step in order. If the prompt can't be written as planned (a setting doesn't exist, two constraints conflict), go back to the plan instead of improvising. A last pass: each line serves a statement of the good result, each instruction appears once, nothing contradicts anything else; cut the rest.
 
-## Test
-
-In the full path, run the executor and the judge as `references/cold-executor.md` says. With an agent, run the test before showing the prompt, and bring the prompt, what the test found and the fixes you propose in one message. A fix that adds or changes a rule, a fact or what the prompt asks is a proposal the user approves; a fix that changes no decision goes straight.
-
-When the user brings back what a real run produced, follow `references/diagnosis.md`. At a third adjustment round on the same prompt, ask whether the plan still holds; the target may not reach the result, which is when `references/model-choice.md` applies again.
-
 ## Deliver
 
-Deliver as `references/delivery.md` says. Outside the prompt, in a few lines: what changed from the plan, if anything; placeholders and `[TO CONFIRM]` items still open; and the test's result in one line, or "not run". Keep the conversation and these notes out of the prompt, and don't present the test as a run on the target.
+Deliver as `references/delivery.md` says. Outside the prompt, in a few lines: what changed from the plan, if anything; placeholders and `[TO CONFIRM]` items still open; and the checklist for the first run. Keep the conversation and these notes out of the prompt.
+
+## Real run
+
+The user's first run on the target is the test. When they bring back what it produced, follow `references/diagnosis.md`. At a third adjustment round on the same prompt, ask whether the plan still holds; the target may not reach the result, which is when `references/model-choice.md` applies again.

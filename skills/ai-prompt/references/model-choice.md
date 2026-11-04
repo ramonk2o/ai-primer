@@ -26,7 +26,7 @@ Criterion: [requirement 1] · [requirement 2] · …
 
 - Never give a name, version, limit or price without a source and a date.
 - When the recommended option comes from the same vendor as the model running this skill, say so in the line.
-- The user decides. If they keep an option that misses a requirement, say in one line what the result will lack, and adapt the goal's statements so the test judges what the option can do.
+- The user decides. If they keep an option that misses a requirement, say in one line what the result will lack, and adapt the goal's statements so the checklist judges what the option can do.
 
 ## 6. When the target can't reach the result
 When adjustment rounds keep failing on the same statement of the goal, say which requirement the target seems unable to meet, and offer two ways out: change the requirement, or move to another model or mode chosen as above.

@@ -30,6 +30,9 @@ The steps the user takes today by hand; the sites, apps or files involved; the a
 ## Typical shape
 The goal and what done means; the context; the safe actions; the actions that need confirmation; uncertainty; stop conditions; what to report. A short list, not a script of clicks.
 
+## First run
+The real run is the test, but here it acts. The delivery suggests one of two ways in: a first run where the agent asks before every action that changes something, or a dry run where it gets the prompt with "Don't act. Describe step by step what you would do, where you would ask before continuing, when you would stop, and what you would report." Any step that would act without the confirmation the prompt asks for, or keep going where it should stop, is a failure.
+
 ## Pitfalls
 - A script of every click, which breaks on the first page that changed.
 - No definition of done, so the agent stops early or never stops.
