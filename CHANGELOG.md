@@ -8,6 +8,10 @@ applied to how the skills behave.
 
 ## [Unreleased]
 
+### Changed
+
+- ai-prompt, ai-knowledge and ai-project: examples are left out of open work (ideas, analysis, plans, research questions), where they narrow what current models explore; they stay for formats, tones and borderline cases.
+
 ## [0.3.0] - 2026-11-04
 
 This version changes how ai-prompt checks a prompt: the user's first real run, judged against a checklist, replaces the executor-and-judge test.

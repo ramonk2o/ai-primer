@@ -25,7 +25,7 @@ These are the essentials that make a file usable by a model that never saw this 
 - Calm language, without all caps or "NEVER". When two rules can collide, say which wins.
 - Numbers with units, currency and period; validity dates next to the facts; the current version in the main text.
 - Items still unconfirmed keep `[TO CONFIRM]`, and the opening paragraph says so.
-- Examples, when they show what a rule can't, as three to five varied, labeled input and output pairs; literal text in fenced code blocks.
+- Examples, when they show what a rule can't (a tone, a format), as three to five varied, labeled input and output pairs; none for open work such as ideas or analysis, where they narrow the answers; literal text in fenced code blocks.
 
 **What stays out.** Notes on how the file was made; a "You are…" opening or any claim of authority over the instructions, since a file is consulted, not obeyed; common knowledge no use case needs; content that belongs to one job.
 

@@ -35,7 +35,7 @@ Used in the Write step and for the light path's draft. These rules apply to ever
 - Long material goes before the request, and the request at the end.
 
 ## Examples
-- Use examples only when they show what words can't: a format, a tone, a borderline case. For a reasoning mode, start without them and add them only if the result needs them.
+- Use examples only when they show what words can't: a format, a tone, a borderline case. Leave them out of open work (ideas, analysis, a plan, a research question): current models stay close to the examples they are shown, so examples there narrow what the model explores. For a reasoning mode, start without them and add them only if the result needs them.
 - Three to five, varied, close to the real inputs; similar examples get copied, including their accidents.
 - Each behavior shown in an example is also stated as a rule, because an example alone is a hint.
 
