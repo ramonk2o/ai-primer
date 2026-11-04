@@ -13,7 +13,7 @@ Propose it in the plan as a hypothesis, with the single prompt as the alternativ
 ## The map
 Each step, in order, with:
 - **What it produces,** and its case.
-- **Where it runs:** app, model and mode, chosen as `model-choice.md` says, and whether it is a new chat or the same as an earlier step. Default to a new chat when the model or mode changes, or when the earlier discussion would get in the way; keep the same chat when the next step needs the whole discussion. A long chat dilutes instructions; a new chat forces an explicit handover, which can be tested.
+- **Where it runs:** app, model and mode, chosen as `model-choice.md` says, and whether it is a new chat or the same as an earlier step. Default to a new chat when the model or mode changes, or when the earlier discussion would get in the way; keep the same chat when the next step needs the whole discussion. A long chat dilutes instructions; a new chat forces an explicit handover, which can be checked.
 - **What passes to the next step:** the whole answer, one section, or an exported file, and where it goes in the next prompt.
 - **What the user checks** before running the next step.
 

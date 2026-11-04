@@ -15,7 +15,7 @@ Three to ten real inputs, including the hardest ones; outputs the user considers
 ## Diagnosis questions
 - What do people do today without the template, and what goes wrong?
 - What varies at each run, and what never changes?
-- Does each run take one item or a batch? It changes the format, the odd inputs and the test inputs.
+- Does each run take one item or a batch? It changes the format, the odd inputs and the inputs for the first runs.
 - What exactly comes out, in what format, and where does it go next?
 - What are the categories, fields or rules, and who decided them? Which wins when two apply?
 - What should happen when the input is empty, irrelevant or in another language?
@@ -36,4 +36,4 @@ A line for the person running it; then the template: the task and its purpose, t
 - Examples that are all alike, so the model copies their accidents.
 - Categories that overlap with no rule for which wins.
 - A format described loosely ("a summary") where the next step needs fields.
-- Tested only on easy inputs.
+- First runs only on easy inputs: the delivery suggests trying two or three real ones, including an odd one, before others use it.

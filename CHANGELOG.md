@@ -10,6 +10,7 @@ applied to how the skills behave.
 
 ### Changed
 
+- ai-prompt: it no longer tests the prompt with a separate executor and judge; the user's first real run on the target is the test, and the delivery carries the goal's statements as a checklist for it, with a result that misses one coming back as an adjustment round. Agent tasks get a suggested first run that asks before every action, or a dry run. `references/cold-executor.md` is removed, and principle 8 names ai-prompt as its exception.
 - ai-prompt: its description also leaves out system prompts for an API, as its scope already did.
 - ai-knowledge and ai-prompt: rules stated twice in the same `SKILL.md` are stated once.
 

@@ -1,6 +1,6 @@
 # Delivery
 
-Used to deliver the prompt: in the full path with the test's results, in the light path as the final reply. The prompt is finished; what is left is getting it to the right place in a form the user can paste, fill in and adjust.
+Used to deliver the prompt, in both paths, as the final reply. The prompt is finished; what is left is getting it to the right place in a form the user can paste, fill in and adjust.
 
 ## What the delivery holds
 - **Where to run it:** app, model and mode, any setting to change, files to attach, and whether it goes in a new chat or a project.
@@ -9,7 +9,8 @@ Used to deliver the prompt: in the full path with the test's results, in the lig
 - **Translation:** when the prompt isn't in the user's language, a labeled translation below it, so they can check what it asks.
 - **How to adjust:** three to five lines of "if the result comes out like this, change that", from the case file's pitfalls and the target's guidance.
 - **The guidance it follows:** one line naming what you read and its date, and what to check if the app has changed since.
-- **The real run is the final test:** one line inviting the user to bring the result back for an adjustment round.
+- **How to check it:** the goal's statements from the Prompt plan as a short checklist of yes-or-no questions for the first real run, with the failure to avoid among them.
+- **The real run is the test:** one line inviting the user to bring back a result that misses an item, for an adjustment round.
 
 ## Where it goes
 1. **A single prompt** is delivered in the reply.
