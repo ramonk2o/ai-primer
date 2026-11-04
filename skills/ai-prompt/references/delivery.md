@@ -1,4 +1,4 @@
-# Handoff
+# Delivery
 
 Used to deliver the prompt: in the full path with the test's results, in the light path as the final reply. The prompt is finished; what is left is getting it to the right place in a form the user can paste, fill in and adjust.
 

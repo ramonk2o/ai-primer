@@ -23,7 +23,7 @@ Early and experimental (before 1.0). Skills are being built one at a time. See [
 /plugin install ai-primer@ai-primer
 ```
 
-The plugin updates when a new version is released.
+Updates don't install on their own: Claude Code turns auto-update off by default for marketplaces outside Anthropic's. To update, run `claude plugin update ai-primer@ai-primer` in your shell, or open `/plugin`, select AI Primer on the **Installed** tab and choose **Update now**. To get new versions automatically, open `/plugin`, go to the **Marketplaces** tab, select `ai-primer` and choose **Enable auto-update**.
 
 ### Claude apps (claude.ai, desktop, mobile)
 

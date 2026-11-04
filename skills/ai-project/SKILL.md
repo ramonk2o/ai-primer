@@ -63,7 +63,7 @@ Order by risk: first what, if wrong, changes the project most. A question whose 
 
 **A gate is explicit approval.** "OK", "approved", "go ahead" count; silence, a change of subject or approving a round's answers do not, except on the light path, as it says. After the gate, the plan is closed: writing doesn't add, drop or rename a file or source, or change the approved text, without asking.
 
-**Tested by someone who wasn't here.** A model inside this conversation already knows what each file is for, so never play the test reader yourself. If the session can start an agent, give it only what `references/cold-reader.md` says; otherwise give the user that file's prompt for a new conversation and ask for the answers back. If the user skips it, the delivery says "Test: not run".
+**Tested by someone who wasn't here.** A model inside this conversation already knows what each file is for, so never play the cold reader yourself. If the session can start an agent, give it only what `references/cold-reader.md` says; otherwise give the user that file's prompt for a new conversation and ask for the answers back. If the user skips it, the delivery says "Cold reader: not run".
 
 ## Materials
 

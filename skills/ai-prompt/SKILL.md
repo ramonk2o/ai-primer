@@ -133,4 +133,4 @@ When the user brings back what a real run produced, follow `references/diagnosis
 
 ## Deliver
 
-Deliver as `references/handoff.md` says. Outside the prompt, in a few lines: what changed from the plan, if anything; placeholders and `[TO CONFIRM]` items still open; and the test's result in one line, or "not run". Keep the conversation and these notes out of the prompt, and don't present the test as a run on the target.
+Deliver as `references/delivery.md` says. Outside the prompt, in a few lines: what changed from the plan, if anything; placeholders and `[TO CONFIRM]` items still open; and the test's result in one line, or "not run". Keep the conversation and these notes out of the prompt, and don't present the test as a run on the target.

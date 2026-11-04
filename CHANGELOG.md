@@ -27,6 +27,8 @@ applied to how the skills behave.
 - Claude and ChatGPT platform notes say the same in ai-project and ai-knowledge: retrieval in Claude projects runs on paid plans, now including Ultra, and holds up to about 10 times more (checked 2026-11-03); ChatGPT's help doesn't say whether files are read whole or in excerpts, so both write for excerpts.
 - On the light path of all three skills, answers that only fill gaps or adjust wording approve the plan, as ai-prompt already said, so the user isn't asked to approve twice; the rule on gates says so too.
 - ai-prompt: the light path points to the "four questions" in `references/research.md` by the name that file uses.
+- ai-prompt: `references/handoff.md` is now `references/delivery.md`, the name ai-project uses; ai-project's rule on the test calls its reader the cold reader and its skipped-test note "Cold reader: not run", as its delivery template does.
+- README: says that updates aren't automatic for this marketplace by default, and how to update or turn auto-update on, instead of promising updates on release.
 
 ### Removed
 
