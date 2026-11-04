@@ -25,7 +25,7 @@ Used in the Architecture step, to decide what goes in the instructions, the know
 ## File map
 
 - Use the smallest set of sources that serves the use cases. Each file justifies itself through a request; don't create a playbook, glossary, checklist and template by default. When a few lines in the instructions would do, write the lines instead of a file. A project with instructions and no files is a normal result.
-- Combine content used together; separate content with different triggers, update cycles or owners. Platforms cap files per project, small projects are read whole (repetition becomes noise and a risk of conflict), and large ones are searched in excerpts (descriptive names and self-contained sections decide what is found).
+- Combine content used together; separate content with different triggers, update cycles or owners. Platforms cap files per project, small Claude projects are read whole (repetition becomes noise and a risk of conflict), and large ones are searched in excerpts (descriptive names and self-contained sections decide what is found).
 - For each file, settle a descriptive name, its role, when it is used, its type (playbook, reference, profile, guidelines, glossary, examples, checklist or output template), its sources or gaps, and whether it is needed now or later.
 
 ## Small and large projects

@@ -8,6 +8,15 @@ applied to how the skills behave.
 
 ## [Unreleased]
 
+### Changed
+
+- ai-prompt: its description also leaves out system prompts for an API, as its scope already did.
+- ai-knowledge and ai-prompt: rules stated twice in the same `SKILL.md` are stated once.
+
+### Fixed
+
+- ai-knowledge and ai-project: reading a whole file is described as what a small Claude project does, not every platform; ChatGPT doesn't say whether it reads files whole.
+
 ## [0.2.0] - 2026-11-04
 
 This version removes Gemini support, which breaks use for anyone who relied on it.
