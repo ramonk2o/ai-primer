@@ -8,6 +8,10 @@ applied to how the skills behave.
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-11-04
+
+This version changes how ai-prompt checks a prompt: the user's first real run, judged against a checklist, replaces the executor-and-judge test.
+
 ### Changed
 
 - ai-prompt: it no longer tests the prompt with a separate executor and judge; the user's first real run on the target is the test, and the delivery carries the goal's statements as a checklist for it, with a result that misses one coming back as an adjustment round. Agent tasks get a suggested first run that asks before every action, or a dry run. `references/cold-executor.md` is removed, and principle 8 names ai-prompt as its exception.
