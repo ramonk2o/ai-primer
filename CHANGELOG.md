@@ -10,7 +10,7 @@ applied to how the skills behave.
 
 ### Changed
 
-- ai-prompt: prompts ask for the methods, tools and raw material a leading professional would use, and for an outside check of the result, instead of giving the model a role; the full path's Prompt plan shows these as proposals, and the light path applies them in the draft. Adapted from Felix Rieseberg's "How to be more ambitious: A tutorial for humans with models" (October 2026).
+- ai-prompt: prompts ask for the methods, tools and raw material a leading professional would use, and for an outside check of the result; a one-line role may still open the prompt, as Anthropic's prompting guidance recommends, but never in place of the methods; the full path's Prompt plan shows these as proposals, and the light path applies them in the draft. Adapted from Felix Rieseberg's "How to be more ambitious: A tutorial for humans with models" (October 2026).
 - The README points Claude apps users to each skill's zip in the latest release instead of asking them to zip the folder.
 - Release flow: every release on GitHub carries a zip of each skill, and the session delivers them when it can't create the release itself.
 - ai-prompt: when the session can't start an agent, the user runs the executor and the judge in two separate new conversations, as principle 8 says; the judge no longer runs in the planning conversation, and `SKILL.md` and `references/cold-executor.md` now agree on this.
