@@ -5,7 +5,7 @@ description: "Plans a knowledge file with the user before writing it, then write
 
 # AI Knowledge
 
-A knowledge file is read by a model that never saw the conversation where it was written. In a small project the model reads the whole file; once a project's knowledge nears the context limit, it searches the files and reads retrieved pieces. Either way, a file written as a summary of the conversation fails: it assumes context the reader doesn't have, and every line that doesn't change an answer costs the model attention. So this skill settles with the user what the file is for and what goes in before writing it, writes it for how assistants read files, and tests it with a reader who has only the file.
+A knowledge file is read by a model that never saw the conversation where it was written. In a small Claude project the model reads the whole file; in a large one it reads only the pieces a search retrieves, and ChatGPT doesn't say which it does. Either way, a file written as a summary of the conversation fails: it assumes context the reader doesn't have, and every line that doesn't change an answer costs the model attention. So this skill settles with the user what the file is for and what goes in before writing it, writes it for how assistants read files, and tests it with a reader who has only the file.
 
 ```
 Full:  Opening (rounds) → Plan → [GATE: File plan] → Write → Cold reader → Deliver
@@ -46,11 +46,9 @@ If the light path turns up contradictions, rules with consequences, or a second 
 
 A round holds only independent questions: one whose answer changes others goes now, its dependents next round. Order by risk, first what would change the file most. A choice between options (path, type, one file or two) lists them numbered, the recommended one marked. If the material answers a question, use the answer and say where it came from. Requests without urgency ("send the approved texts if you have them") go in one line, outside the numbering.
 
-**Propose before asking.** With material, bring a reading of it; without, propose a starting point from the type's file. Don't ask the user about models, tokens or file types: propose the type from the need, and keep their choice if they made one.
+**Propose before asking.** With material, bring a reading of it; without, propose a starting point from the type's file. Missing material never stalls: propose a draft, raise hypotheses, say where the information might be. Don't ask the user about models, tokens or file types: propose the type from the need, and keep their choice if they made one.
 
 **The request is a hypothesis.** When the material or the conversation shows the file won't change the situation behind the request (a few lines in the project's instructions would do, or the content belongs in a file the project already has), say so in the first round as a labeled proposal, with what would, and follow the user's answer. When nothing points to it, don't ask.
-
-**Missing material never stalls.** Propose a draft, raise hypotheses, say where the information might be.
 
 **Nothing invented.** Every rule, fact, number or quote in the file comes from the material or the user; derived figures are welcome once checked. A suggestion you make to fill a gap stays labeled as a proposal until the user adopts it, and anything without a source stays `[TO CONFIRM]`, because an invented rule in a project file is applied with confidence in every chat that reads it. Facts about a platform come from its current documentation, as `references/platforms.md` says, never from memory.
 
@@ -66,12 +64,12 @@ Read the materials before asking about them, and don't claim to have read a file
 
 ## Opening
 
-**0.1 Process and path.** In one sentence, say how it works: settle what the file is for and what goes in, write it, test it on real requests. The first question of the first round is the path.
+**0.1 Process and path.** In one sentence, say how it works: settle what the file is for and what goes in, write it, test it on real requests.
 
 **0.2 Context.** Settle what the request and the material don't answer:
 - **Project:** what the project or assistant does, and for whom.
 - **Role of the file:** which task, decision or behavior it supports, pinned down with a concrete request someone would make.
-- **Destination and size:** the platform, only when it changes something (by default the file is portable Markdown), and how much knowledge the project holds with this file: a few short files, which the model reads whole, or manuals and catalogs near the context limit, which it searches. Read `references/platforms.md` when the destination is known or the project is large.
+- **Destination and size:** the platform, only when it changes something (by default the file is portable Markdown), and how much knowledge the project holds with this file: a few short files, which a Claude project reads whole, or manuals and catalogs near the context limit, which it searches; ChatGPT files are written as if searched. Read `references/platforms.md` when the destination is known or the project is large.
 - **Neighbors:** the project's instructions and other files, so the file doesn't repeat or contradict them.
 - **Upkeep:** who updates it and how often, which decides whether fast-changing facts belong in it.
 

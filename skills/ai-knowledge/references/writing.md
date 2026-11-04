@@ -18,7 +18,7 @@ Used in step 2.1. These rules make a file usable by a model that never saw the c
 
 - Write for a capable colleague who knows the world but not this project. Explain what is specific to the project (its rules, names, criteria, exceptions) and skip what any capable reader already knows.
 - A file is consulted, not obeyed. It doesn't open with "You are…" or claim authority over the project's instructions; a file that poses as a system prompt competes with the instructions instead of supporting them.
-- In a small project the model reads the whole file at once; in a large one it searches the project's files and reads the pieces it finds. Write every file so a piece still makes sense, and apply "Large projects" when the plan says large.
+- In a small Claude project the model reads the whole file at once; in a large one it searches the project's files and reads the pieces it finds, and ChatGPT's help doesn't say which it does. Write every file so a piece still makes sense, and apply "Large projects" when the plan says large.
 
 ## Every line costs attention
 

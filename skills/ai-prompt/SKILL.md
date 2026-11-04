@@ -1,6 +1,6 @@
 ---
 name: ai-prompt
-description: "Helps the user work out what they want from an AI assistant, then writes the prompt for it and recommends the model and mode to run it in (ChatGPT or Claude), from current vendor docs and tested practice: one-off asks that matter, conversation openers, deep research, agent tasks, reusable templates, chains across chats and models, and fixes for prompts that misfire. Use in any language (e.g., 'write a prompt to analyze this CRM export', 'qual modelo uso pra essa pesquisa?'). Not for image, video or audio prompts, project instructions, or coding agents."
+description: "Helps the user work out what they want from an AI assistant, then writes the prompt for it and recommends the model and mode to run it in (ChatGPT or Claude), from current vendor docs and tested practice: one-off asks that matter, conversation openers, deep research, agent tasks, reusable templates, chains across chats and models, and fixes for prompts that misfire. Use in any language (e.g., 'write a prompt to analyze this CRM export', 'qual modelo uso pra essa pesquisa?'). Not for image, video or audio prompts, project instructions, coding agents, or system prompts for an API."
 ---
 
 # AI Prompt
@@ -86,7 +86,7 @@ In the full path, the first reply says in one sentence how it will work (settle 
 
 **The target decides the form.** Identify the app, model and mode from the request or the context, and where the prompt lands: a new chat, a project with its own instructions (read them if the user has them, so the prompt doesn't repeat or contradict them), or an earlier step's chat. Don't infer the target from where this skill runs: writing here for another vendor's app is common. When the user fixes the vendor, choose only the model and mode within it.
 
-**Recommend one.** Read `references/model-choice.md` and follow it for every prompt and for a model-only question. Read `references/research.md` before recommending or writing (on the light path it says when to skip the lookup): what you look up there, and its date, goes into the plan. Never write a model, mode, limit or price from memory.
+**Recommend one.** Read `references/model-choice.md` and follow it for every prompt and for a model-only question. Read `references/research.md` before recommending or writing (on the light path it says when to skip the lookup): what you look up there, and its date, goes into the plan.
 
 ## Plan
 
