@@ -28,7 +28,7 @@ Recommend a path in the first round, with a one-line reason.
 
 **Full** — for rules with consequences (guidelines a client will hold you to, a policy, a playbook people follow, a reference with prices or legal terms), long or conflicting material, or a file a team shares. It runs the interview, the triage, the gate and the cold reader.
 
-**Light** — for a glossary, a short checklist, an output template, a small profile, or revising a file whose content is settled. When the request and the material already give the project, the file's role and its type, the first reply brings the complete File plan with its sample entry and one round of the 3 to 5 highest-risk questions, the path first, and asks the user to answer and approve. Otherwise one opening round comes first. If the answers change the plan, show what changed and ask again. After writing, offer the cold reader in one line. One proposal, one gate.
+**Light** — for a glossary, a short checklist, an output template, a small profile, or revising a file whose content is settled. When the request and the material already give the project, the file's role and its type, the first reply brings the complete File plan with its sample entry and one round of the 3 to 5 highest-risk questions, the path first, and asks the user to answer and approve. Otherwise one opening round comes first. Answers that only fill gaps or adjust wording approve the plan, and the next reply writes the file; answers that change the plan show what changed and ask again. After writing, offer the cold reader in one line. One proposal, one gate.
 
 If the light path turns up contradictions, rules with consequences, or a second file, suggest switching to full.
 
@@ -55,7 +55,7 @@ A round holds only independent questions: one whose answer changes others goes n
 
 **Go back when needed.** If something an earlier step settled changes (the file's role, the source of the rules, the split into files), say so and reopen that step.
 
-**A gate is explicit approval.** "OK", "approved", "go ahead" count; silence, a change of subject or a passing comment don't. An "ok to all" in a round approves the answers, not the gate. After the gate, the File plan is closed: writing doesn't change what it decided without asking, and later changes are written back into it.
+**A gate is explicit approval.** "OK", "approved", "go ahead" count; silence, a change of subject or a passing comment don't. An "ok to all" in a round approves the answers, not the gate, except on the light path, as it says. After the gate, the File plan is closed: writing doesn't change what it decided without asking, and later changes are written back into it.
 
 **Checks by someone who wasn't here.** A model inside this conversation already knows what the file meant to say, so never play the cold reader yourself. If the session can start a separate agent, give it only what `references/cold-reader.md` says. Otherwise give the user that file's prompt to paste into a new conversation, and ask for the answers back. If the user skips it, the delivery note says "Cold reader: not run".
 

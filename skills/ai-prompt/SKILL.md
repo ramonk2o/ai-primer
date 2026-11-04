@@ -42,7 +42,7 @@ Then the mode:
 
 **Full** — templates, deep research, agent tasks, chains, and any prompt whose result goes to a client or into a decision. Rounds, the Prompt plan gate, writing and the test.
 
-**Light** — one-off asks and conversation openers otherwise, and a fix to a single prompt. After the research, the first reply brings the short Prompt plan with the complete prompt as its draft, any missing fact as a `[placeholder]`, and at most three questions: the goal first when it is in real doubt (see "What the user wants"), then the path, recommending light and naming what would make it full, then the user's access when the target is open. Answers that only fill placeholders or adjust wording approve the prompt and the next reply delivers it; answers that change the goal or the target reopen the draft. The draft uses the depth questions in `references/research.md` without adding one for the user. The test is offered in one line. If the stakes rise or a step appears that feeds another, suggest switching to full.
+**Light** — one-off asks and conversation openers otherwise, and a fix to a single prompt. After the research, the first reply brings the short Prompt plan with the complete prompt as its draft, any missing fact as a `[placeholder]`, and at most three questions: the goal first when it is in real doubt (see "What the user wants"), then the path, recommending light and naming what would make it full, then the user's access when the target is open. Answers that only fill placeholders or adjust wording approve the prompt and the next reply delivers it; answers that change the goal or the target reopen the draft. The draft uses the four questions in `references/research.md` without adding one for the user. The test is offered in one line. If the stakes rise or a step appears that feeds another, suggest switching to full.
 
 ## How to run it
 
@@ -63,7 +63,7 @@ Order by risk: first what, if wrong, changes the result most. A question whose a
 
 **Go back when needed.** If something settled changes (the goal, the target, a step of a chain), say so and reopen that step.
 
-**A gate is explicit approval.** "OK", "approved", "go ahead" count; silence, a change of subject or approving a round's answers do not. After the gate the Prompt plan is closed: writing doesn't change what it decided without asking, and later changes are written back into it.
+**A gate is explicit approval.** "OK", "approved", "go ahead" count; silence, a change of subject or approving a round's answers do not, except on the light path, as it says. After the gate the Prompt plan is closed: writing doesn't change what it decided without asking, and later changes are written back into it.
 
 **Tested by someone who wasn't here.** A model inside this conversation already knows what the prompt meant to ask, so never play the executor or the judge yourself. If the session can start separate agents, give each only what `references/cold-executor.md` says; otherwise give the user that file's two prompts, each for its own new conversation, as it says. A test never sends, buys, posts, deletes or changes anything. If the user skips it, the delivery says "Test: not run".
 

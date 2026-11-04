@@ -21,6 +21,8 @@ applied to how the skills behave.
 - ai-project: the Project plan gives the project's size (read whole or searched in excerpts) and, for each file, its type, who updates it and whether it is needed now or later, as the architecture step already asked; ai-prompt: the Prompt plan has a line for the output format.
 - ai-project and ai-knowledge describe the handover of a knowledge file with the same list on both sides (adding the project's size, the use cases the file serves, its type, who updates it and where to save it), and say that the handed file follows the project's path and is tested and delivered with the whole project, not on its own.
 - Claude and ChatGPT platform notes say the same in ai-project and ai-knowledge: retrieval in Claude projects runs on paid plans, now including Ultra, and holds up to about 10 times more (checked 2026-11-03); ChatGPT's help doesn't say whether files are read whole or in excerpts, so both write for excerpts.
+- On the light path of all three skills, answers that only fill gaps or adjust wording approve the plan, as ai-prompt already said, so the user isn't asked to approve twice; the rule on gates says so too.
+- ai-prompt: the light path points to the "four questions" in `references/research.md` by the name that file uses.
 
 ### Removed
 
