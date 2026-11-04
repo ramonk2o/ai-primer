@@ -13,7 +13,7 @@ applied to how the skills behave.
 - ai-prompt: prompts ask for the methods, tools and raw material a leading professional would use, and for an outside check of the result, instead of giving the model a role; the full path's Prompt plan shows these as proposals, and the light path applies them in the draft. Adapted from Felix Rieseberg's "How to be more ambitious: A tutorial for humans with models" (October 2026).
 - The README points Claude apps users to each skill's zip in the latest release instead of asking them to zip the folder.
 - Release flow: every release on GitHub carries a zip of each skill, and the session delivers them when it can't create the release itself.
-- ai-prompt: when the session can't start an agent, the user runs the executor in a new conversation and the skill judges the answer itself, saying the judge wasn't independent; `SKILL.md` and `references/cold-executor.md` no longer disagree on this.
+- ai-prompt: when the session can't start an agent, the user runs the executor and the judge in two separate new conversations, as principle 8 says; the judge no longer runs in the planning conversation, and `SKILL.md` and `references/cold-executor.md` now agree on this.
 
 ### Fixed
 

@@ -47,7 +47,7 @@ Result: [executor's result]
 ```
 
 ## Without an agent
-The user pastes the executor's prompt into a new conversation and brings the answer back. Then judge it here, statement by statement, quoting the result for each verdict, and say in the delivery that the judge wasn't independent.
+Give the user both prompts, the judge's already filled with the input and the statements, and the steps: paste the executor's prompt into a new conversation and copy its answer; paste that answer into the judge's prompt where it says `[executor's result]` and send it in another new conversation; bring the judge's answer back. Each conversation sees only its own prompt, so neither knows what this one meant.
 
 ## Using the answers
 - A "no" from the judge is a problem of the prompt: find the missing instruction, the rule that conflicts with another, or the context the executor didn't have, and propose a fix.
