@@ -10,3 +10,7 @@
 .DocumentRevisions-V100
 .VolumeIcon.icns
 Icon?
+
+# Claude Code
+.claude/settings.local.json
+evals/**/results/
