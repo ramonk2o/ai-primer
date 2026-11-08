@@ -56,14 +56,6 @@ Ideas, bugs and debt for this plugin, managed with sensei's log skill. Each entr
 
 ## Plugin
 
-### Principles don't state the skills' deliberate exceptions
-- **Type:** Debt
-- **Motivation:** consistency audit, 2026-11-08. Every review flagged the same three conflicts between docs/principles.md and behavior the skills choose on purpose: on the light path, answers that only fill gaps approve the plan (all three skills, against principle 7); ai-project sends personal projects, ports and instruction revisions to the light path, though project instructions "shape every chat" (principle 4); ai-prompt's full-path plan carries no prompt text, to avoid anchoring the conversation (principle 7).
-- **Description:** amend the principles so they state these exceptions, so future reviews stop flagging them.
-- **Open questions:**
-  - Principle 4: "shapes every chat in a shared project", or another line?
-  - ai-prompt: an exception in principle 7, or a sample passage (the hardest rule as it will read) in the full-path plan?
-
 ### File search fact exists only in ai-knowledge's platform summary
 - **Type:** Debt
 - **Motivation:** consistency audit, 2026-11-08. ai-knowledge's references/platforms.md cites OpenAI's API "File search" (semantic and keyword search over chunks); ai-project's references/platforms/chatgpt.md, which principle 9 says holds the facts in full, doesn't.

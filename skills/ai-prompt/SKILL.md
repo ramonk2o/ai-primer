@@ -46,7 +46,7 @@ Then the mode:
 
 ## How to run it
 
-**No prompt before the gate.** In the full path the prompt is written only after the Prompt plan is approved, because a prompt written early anchors the conversation to its wording instead of to the result; in the light path the draft is part of the plan. If the user asks to skip ahead, say in one sentence what the plan gains and offer the light path; if they insist, the decision is theirs: write it as "Declined" says.
+**No prompt before the gate.** In the full path the prompt is written only after the Prompt plan is approved, apart from the plan's sample rule, because a prompt written early anchors the conversation to its wording instead of to the result; one rule is enough to judge how the prompt will read without fixing the rest. In the light path the draft is part of the plan. If the user asks to skip ahead, say in one sentence what the plan gains and offer the light path; if they insist, the decision is theirs: write it as "Declined" says.
 
 **Rounds, always with your answer.** Each message brings up to five numbered questions, each with the answer you recommend and a one-line reason, so the user only confirms or corrects.
 
@@ -98,6 +98,7 @@ Bring in one message:
 - **Methods and material:** what the target uses to do the work as a leading professional would: the methods and tools, the rawest material it gets, and the outside check it runs, from `references/research.md`, each marked as a proposal.
 - **Settings and constraints:** what is set in the app rather than written (mode, files to attach, connected sources), the output format and the exclusions.
 - **Prompt shape:** its parts in order, from the case and the target's guidance, and its approximate length; a long prompt needs a reason here.
+- **Sample:** in the full path, the prompt's hardest rule, the one the goal depends on most or the one most likely to be misread, written as it will read in the prompt, so the user judges text and not a description; not the whole prompt. In a chain, it comes from the step the result depends on most. Leave it out when the plan carries a draft (light path, diagnosis).
 - **Chain map,** as `references/chain.md` says.
 
 ### Gate — Prompt plan
@@ -113,6 +114,7 @@ Inputs · variables: …
 Methods and material: [methods, tools] · material: … · check: …
 Settings in the app: … · Output format: … · Exclusions: …
 Prompt shape: [parts] · about [length] · language: …
+Sample: [the hardest rule, as it will read]
 Chain: 1. [step] — [runs in] — passes [what] → check …
 Diagnosis: [cause] → [change]
 Pending [TO CONFIRM]: …
