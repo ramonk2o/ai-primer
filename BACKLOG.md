@@ -54,13 +54,6 @@ Ideas, bugs and debt for this plugin, managed with sensei's log skill. Each entr
 - **Open questions:**
   - Handle them without the plugin, or cover custom GPTs with a platform file?
 
-### Renaming a file after the gate is both forbidden and allowed
-- **Type:** Bug
-- **Motivation:** consistency audit, 2026-11-08 (no case from real use). "A gate is explicit approval" says writing doesn't rename a file without asking; "Fixes" lists "a file renamed" as a fix that goes straight, and the cold reader can suggest a more descriptive name.
-- **Description:** pick one rule.
-- **Open questions:**
-  - Drop "a file renamed" from Fixes, or let the gate except a rename the test calls for?
-
 ## Plugin
 
 ### Principles don't state the skills' deliberate exceptions
@@ -75,3 +68,9 @@ Ideas, bugs and debt for this plugin, managed with sensei's log skill. Each entr
 - **Type:** Debt
 - **Motivation:** consistency audit, 2026-11-08. ai-knowledge's references/platforms.md cites OpenAI's API "File search" (semantic and keyword search over chunks); ai-project's references/platforms/chatgpt.md, which principle 9 says holds the facts in full, doesn't.
 - **Description:** add the fact with its source and check date to chatgpt.md, or drop it from ai-knowledge.
+
+## Discarded
+
+### Renaming a file after the gate is both forbidden and allowed
+- **Description:** pick one rule between the gate ("writing doesn't rename a file without asking") and Fixes ("a file renamed" goes straight).
+- **Why discarded:** either behavior is harmless: renaming after the test or asking first leads to the same result, so the fix isn't worth the change. (2026-11-08)
