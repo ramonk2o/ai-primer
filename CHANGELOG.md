@@ -8,6 +8,10 @@ applied to how the skills behave.
 
 ## [Unreleased]
 
+### Changed
+
+- ai-prompt: on the full path, the Prompt plan shows the prompt's hardest rule as it will read, so the user judges text before approving.
+
 ## [0.3.1] - 2026-11-04
 
 This version leaves examples out of open work in prompts and knowledge files.
