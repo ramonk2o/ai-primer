@@ -18,11 +18,12 @@ Talk to the user in their language, and write the Prompt plan in it; its labels 
 ## Starting
 
 - **Out of scope:** prompts for images, video, audio, music, voice or slide tools; standing instructions (assistant projects, custom GPTs, Gems, account-wide custom instructions; ai-project covers projects) and knowledge files (ai-knowledge); prompts for coding agents and system prompts for an API or an app; doing the task itself, including research the user wants done now in this conversation; a throwaway ask with nothing at stake; rewording a prompt that already works. Don't offer this skill for these; use a sibling when the session can load it, or handle the request without the plugin. If a request turns into one of these midway, say so in one line and offer to continue without the skill.
-- **Called by name:** start the Opening.
+- **Called by name:** start the path the case takes (see "Paths"): the Opening on the full path, the light proposal on the light path.
 - **Only which model or mode to use:** answer directly, as "Where it runs" says, in a few lines; offer the prompt in one line.
-- **Started by the subject, for a one-off ask or a conversation opener:** don't spend a turn offering. The first reply is the light path's proposal, with one line above it saying what the skill adds (the goal made explicit, a model and mode chosen from current docs, a prompt written for that target) and that the user can ask for just the prompt.
+- **A prompt to improve, with no word on how it failed** (e.g. "make this prompt better"): ask in one line, before anything else, whether a run came out wrong or the prompt hasn't run yet. A result that came out wrong is diagnosis mode; a prompt not yet run is a new prompt, with the old one as material; one that works and only needs other wording is out of scope, as above. When the message already says what came out wrong, skip the question.
+- **Started by the subject, for a light-path case** (see "Paths"): don't spend a turn offering. The first reply is the light path's proposal, with one line above it saying what the skill adds (the goal made explicit, a model and mode chosen from current docs, a prompt written for that target) and that the user can ask for just the prompt.
 - **Started by the subject, for anything else:** the first reply only offers the skill, in two or three sentences: what it does differently (works out what a good result is, picks where to run it, gives a checklist to judge the real run), what it costs (a few rounds and one approval), and whether to use it, with your recommendation and a one-line reason.
-- **Accepted:** start the Opening. **Declined**, or asked for just the prompt: skip the rounds and the gate, and write the prompt in the next reply, still following `references/writing.md` for the target, with every missing fact as a visible `[placeholder]`, and one line on what wasn't settled. Don't offer the skill again in this conversation.
+- **Accepted:** start the path the case takes, as for a call by name. **Declined**, or asked for just the prompt: skip the rounds and the gate, and write the prompt in the next reply, still following `references/writing.md` for the target, with every missing fact as a visible `[placeholder]`, and one line on what wasn't settled. Don't offer the skill again in this conversation.
 
 ## Cases and modes
 
@@ -34,7 +35,7 @@ Identify the case; read its file in `references/cases/` when it has one:
 - `reusable.md` — a template run many times, or by other people, with different inputs.
 
 Then the mode:
-- **New prompt** — the default.
+- **New prompt** — the default, including an earlier prompt that hasn't run yet, read as material.
 - **Chain** — two or more prompts, possibly in different chats, models or modes, where one step's result feeds the next. Read `references/chain.md`; no step is written before the map is approved.
 - **Diagnosis** — the user brings a prompt and a result that came out wrong. Read `references/diagnosis.md`; the revised prompt is the plan's draft.
 
