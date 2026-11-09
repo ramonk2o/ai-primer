@@ -2,25 +2,6 @@
 
 Ideas, bugs and debt for this plugin, managed with sensei's log skill. Each entry starts from a real case. Done work leaves this file: what changed goes to CHANGELOG.md.
 
-## ai-prompt
-
-### `[TO CONFIRM]` can end up inside a delivered prompt
-- **Type:** Bug
-- **Motivation:** consistency audit, 2026-11-08 (no case from real use). "Nothing invented" turns user facts into `[placeholder]` but also says "anything without a source is `[TO CONFIRM]`"; research.md marks tool details `[TO CONFIRM]` without saying where. A marker left in a pasted prompt is read by the target model as content.
-- **Description:** state once in SKILL.md which marker goes where: `[placeholder: …]` inside the prompt for facts about the user's situation, `[TO CONFIRM]` only in the plan and the delivery notes.
-
-### Agent task's first-run advice doesn't reach the delivery
-- **Type:** Bug
-- **Motivation:** consistency audit, 2026-11-08 (no case from real use). cases/agent-task.md says the delivery suggests a first run that asks before each change, or a dry run. delivery.md takes only the case file's pitfalls, so the safety advice is dropped.
-- **Description:** delivery.md includes the case file's first-run advice when it has one.
-
-## Plugin
-
-### File search fact exists only in ai-knowledge's platform summary
-- **Type:** Debt
-- **Motivation:** consistency audit, 2026-11-08. ai-knowledge's references/platforms.md cites OpenAI's API "File search" (semantic and keyword search over chunks); ai-project's references/platforms/chatgpt.md, which principle 9 says holds the facts in full, doesn't.
-- **Description:** add the fact with its source and check date to chatgpt.md, or drop it from ai-knowledge.
-
 ## Discarded
 
 ### Renaming a file after the gate is both forbidden and allowed

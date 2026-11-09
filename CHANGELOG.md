@@ -15,6 +15,7 @@ applied to how the skills behave.
 - ai-knowledge: leaves out files that live in a code repository, in its description too; a file for a platform it has no facts on, such as a custom GPT, is written as portable Markdown with a note saying so.
 - ai-project: leaves out custom GPTs, Gems and account-wide custom instructions.
 - ai-knowledge: the plan's sample entry follows the writing rules, so the approved text is the text written; size is "read whole | searched", as ai-project hands it over, and any ChatGPT destination counts as searched.
+- ai-prompt: `[TO CONFIRM]` stays in the plan and the delivery notes, never inside the prompt; the delivery carries the case file's first-run advice, such as a dry run for an agent task.
 
 ## [0.3.1] - 2026-11-04
 

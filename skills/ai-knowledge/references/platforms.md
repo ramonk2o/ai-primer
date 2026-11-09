@@ -13,5 +13,5 @@ Used in step 0.2 when the destination is known or the files are searched. These 
 
 ## ChatGPT projects (checked 2026-10-22; the help article couldn't be opened on 2026-10-28)
 - Files per project depend on the plan: 5 on Free, 25 on Go and Plus, 40 on Pro, Business, Edu and Enterprise; up to 10 per upload. Over the limit, OpenAI suggests combining files or splitting the work across projects.
-- Project instructions set how ChatGPT responds and override the user's global custom instructions inside the project; files supply reference material. The help article doesn't say whether files are read whole or retrieved in excerpts, so write them for excerpts; OpenAI's file search in the API combines semantic and keyword search over chunks.
-- Source: OpenAI Help Center, "Projects in ChatGPT"; OpenAI API docs, "File search".
+- Project instructions set how ChatGPT responds and override the user's global custom instructions inside the project; files supply reference material. The help article doesn't say whether files are read whole or retrieved in excerpts, so write them for excerpts.
+- Source: OpenAI Help Center, "Projects in ChatGPT".
