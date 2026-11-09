@@ -21,26 +21,10 @@ Ideas, bugs and debt for this plugin, managed with sensei's log skill. Each entr
 - **Motivation:** consistency audit, 2026-11-08 (no case from real use). references/writing.md is first read at 2.1, after the gate, so the sample entry approved at 1.3 (or in the light proposal) is drafted without its rules and rewritten at 2.1. The user approves text that doesn't survive.
 - **Description:** read references/writing.md before drafting the sample entry, on both paths.
 
-### Code-repository files aren't excluded
-- **Type:** Bug
-- **Motivation:** consistency audit, 2026-11-08 (no case from real use). ai-project leaves out files in a code repository; ai-knowledge doesn't. "Write an AGENTS.md" or "a coding style guide for Claude Code in our repo" match the description, and the skill's project rules (consultation sentence, project instructions) don't fit them.
-- **Description:** leave out repository files (CLAUDE.md, AGENTS.md, agent configurations, skills) in Starting, matching ai-project's boundary, and add "otherwise handle it without the plugin" when the sibling can't be loaded.
-- **Open questions:**
-  - Also in the description, given the 600-character limit?
-
 ### Project size doesn't settle ChatGPT files
 - **Type:** Bug
 - **Motivation:** consistency audit, 2026-11-08 (no case from real use). The large-project rules apply only "when the plan says large", but ChatGPT files are to be written as if searched; a small ChatGPT project gets marked small and the excerpt rules are skipped. ai-project hands over "Size: read whole | searched", which ai-knowledge has to map onto small | large.
 - **Description:** use one term pair in both skills (e.g. "read whole | searched") and say that any ChatGPT destination counts as searched.
-
-## ai-project
-
-### Custom GPTs, Gems and account-wide instructions have no owner
-- **Type:** Bug
-- **Motivation:** consistency audit, 2026-11-08 (no case from real use). ai-prompt leaves custom GPTs, Gems and account-wide custom instructions out; ai-project names only "a Gemini notebook". "Make a custom GPT for our sales team" would trigger ai-project, which has no platform file for GPTs and would apply project facts or fill them from memory.
-- **Description:** settle who takes these requests and state it in Out of scope.
-- **Open questions:**
-  - Handle them without the plugin, or cover custom GPTs with a platform file?
 
 ## Plugin
 

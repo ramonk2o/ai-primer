@@ -1,6 +1,6 @@
 ---
 name: ai-knowledge
-description: "Plans a knowledge file with the user before writing it, then writes it for how AI assistants read files: playbooks, references, profiles, guidelines and style guides, glossaries, example sets, checklists and output templates, as lean Markdown for Claude and ChatGPT projects. Use to create, review, restructure or slim down such a file, in any language and even without those terms (e.g., 'make a glossary for the support project', 'esse manual tá grande demais pro Claude, enxuga'). Not for a whole project with its instructions, for prompts, or for simple summaries."
+description: "Plans a knowledge file with the user before writing it, then writes it for how AI assistants read files: playbooks, references, profiles, guidelines and style guides, glossaries, example sets, checklists and output templates, as lean Markdown for Claude and ChatGPT projects. Use to create, review, restructure or slim down such a file, in any language and even without those terms (e.g., 'make a glossary for the support project', 'esse manual tá grande demais pro Claude, enxuga'). Not for a whole project or its instructions, prompts, repository files such as AGENTS.md, or simple summaries."
 ---
 
 # AI Knowledge
@@ -16,7 +16,7 @@ Talk to the user in their language, and write the File plan in it too; its label
 
 ## Starting
 
-- **Another skill's request.** A whole project, with its instructions and set of files, or a project's instructions alone, belongs to ai-project. A prompt for an assistant (a one-off ask, a deep research or agent task, a template reused with new inputs, a chain) belongs to ai-prompt; a prompt for an image, video or audio tool is handled without this plugin. Offer the sibling when the session can load it. A one-off summary, doing the task the file supports, and documents written for people (a memo, a report) are handled without this plugin. If a request turns into one of these midway, say so in one line and offer to continue without this skill.
+- **Another skill's request.** A whole project, with its instructions and set of files, or a project's instructions alone, belongs to ai-project. A prompt for an assistant (a one-off ask, a deep research or agent task, a template reused with new inputs, a chain) belongs to ai-prompt; a prompt for an image, video or audio tool is handled without this plugin. Offer the sibling when the session can load it. A one-off summary, doing the task the file supports, and documents written for people (a memo, a report) are handled without this plugin, and so are files that live in a code repository (CLAUDE.md, AGENTS.md, agent configurations, skills). If a request turns into one of these midway, say so in one line and offer to continue without this skill.
 - **Called by name:** start the Opening.
 - **Handed a file by ai-project:** follow "When ai-project hands over a file".
 - **Started by the subject, for a light-path case whose material is in the message** (see "Paths"): don't spend a turn offering. The first reply is the light path's proposal, with one line above it saying what the skill adds (the file's role settled, nothing invented, a sample to judge before writing) and that the user can ask for just the file.
@@ -69,7 +69,7 @@ Read the materials before asking about them, and don't claim to have read a file
 **0.2 Context.** Settle what the request and the material don't answer:
 - **Project:** what the project or assistant does, and for whom.
 - **Role of the file:** which task, decision or behavior it supports, pinned down with a concrete request someone would make.
-- **Destination and size:** the platform, only when it changes something (by default the file is portable Markdown), and how much knowledge the project holds with this file: a few short files, which a Claude project reads whole, or manuals and catalogs near the context limit, which it searches; ChatGPT files are written as if searched. Read `references/platforms.md` when the destination is known or the project is large.
+- **Destination and size:** the platform, only when it changes something (by default the file is portable Markdown), and how much knowledge the project holds with this file: a few short files, which a Claude project reads whole, or manuals and catalogs near the context limit, which it searches; ChatGPT files are written as if searched. Read `references/platforms.md` when the destination is known or the project is large. For a platform with no section in `references/platforms.md` (a custom GPT, a Gem), write portable Markdown as if searched, and say in one line that this skill hasn't checked how that platform reads files.
 - **Neighbors:** the project's instructions and other files, so the file doesn't repeat or contradict them.
 - **Upkeep:** who updates it and how often, which decides whether fast-changing facts belong in it.
 

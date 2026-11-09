@@ -12,6 +12,8 @@ applied to how the skills behave.
 
 - ai-prompt: on the full path, the Prompt plan shows the prompt's hardest rule as it will read, so the user judges text before approving.
 - ai-prompt: a one-off ask whose result goes to a client or to other people, or that a consequential decision rests on, gets the offer instead of the light proposal; called by name, a light case starts the light proposal; "improve this prompt" asks in one line whether a run went wrong before choosing between diagnosis and a new prompt.
+- ai-knowledge: leaves out files that live in a code repository, in its description too; a file for a platform it has no facts on, such as a custom GPT, is written as portable Markdown with a note saying so.
+- ai-project: leaves out custom GPTs, Gems and account-wide custom instructions.
 
 ## [0.3.1] - 2026-11-04
 
