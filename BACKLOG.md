@@ -4,18 +4,6 @@ Ideas, bugs and debt for this plugin, managed with sensei's log skill. Each entr
 
 ## ai-prompt
 
-### One-off asks get conflicting routing
-- **Type:** Bug
-- **Motivation:** consistency audit, 2026-11-08 (no case from real use). "Starting" sends every one-off ask or conversation opener straight to the light proposal. "Paths" sends to the full path "any prompt whose result goes to a client or into a decision", which fits most one-off asks. For "write a prompt to analyze this CRM export for the board", the model can skip the offer on a full-path case or recommend light for a client deliverable. "Called by name: start the Opening" doesn't fit the light path, which has no Opening.
-- **Description:** key the no-offer branch on "a light-path case whose material is in the message", as the siblings and principle 2 do. Say what a one-off ask whose result goes to a client or into a decision gets. Say what a call by name does on a light case.
-
-### "Improve my prompt" has no route
-- **Type:** Bug
-- **Motivation:** consistency audit, 2026-11-08 (no case from real use). Scope leaves out "rewording a prompt that already works" and the description covers "fixes for prompts that misfire". "Melhora esse prompt" says neither, so the model may drop the skill or force diagnosis without a bad result to diagnose.
-- **Description:** say what to do when it's unclear whether the prompt works.
-- **Open questions:**
-  - Ask in one line what came out wrong, or treat it as a new prompt with the old one as material?
-
 ### `[TO CONFIRM]` can end up inside a delivered prompt
 - **Type:** Bug
 - **Motivation:** consistency audit, 2026-11-08 (no case from real use). "Nothing invented" turns user facts into `[placeholder]` but also says "anything without a source is `[TO CONFIRM]`"; research.md marks tool details `[TO CONFIRM]` without saying where. A marker left in a pasted prompt is read by the target model as content.

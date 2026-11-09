@@ -11,6 +11,7 @@ applied to how the skills behave.
 ### Changed
 
 - ai-prompt: on the full path, the Prompt plan shows the prompt's hardest rule as it will read, so the user judges text before approving.
+- ai-prompt: a one-off ask whose result goes to a client or to other people, or that a consequential decision rests on, gets the offer instead of the light proposal; called by name, a light case starts the light proposal; "improve this prompt" asks in one line whether a run went wrong before choosing between diagnosis and a new prompt.
 
 ## [0.3.1] - 2026-11-04
 
