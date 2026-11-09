@@ -1,6 +1,6 @@
 # Platforms
 
-Used in step 0.2 when the destination is known or the project is large. These notes say how each platform reads project files, as checked on the date beside each one. Platforms change often, so before relying on a note in a reply, check the platform's current official documentation; if it differs, follow the documentation and tell the user the note is outdated. When the platforms would lead to different choices, write for Claude.
+Used in step 0.2 when the destination is known or the files are searched. These notes say how each platform reads project files, as checked on the date beside each one. Platforms change often, so before relying on a note in a reply, check the platform's current official documentation; if it differs, follow the documentation and tell the user the note is outdated. When the platforms would lead to different choices, write for Claude.
 
 ## In common
 - Project instructions are read in every chat; files are material the model consults. A rule that must always apply needs a line in the instructions.

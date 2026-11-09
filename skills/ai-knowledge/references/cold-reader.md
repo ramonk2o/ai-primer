@@ -29,7 +29,7 @@ Requests:
 Finally:
 4. Which terms or rules could you read in more than one way?
 [Optional, with neighbor files: 5. Where do the files say the same thing differently, or contradict each other? Which one did you follow?]
-[Optional, large project: 6. Pick two sections of [file name] and say whether each would still make sense read alone, without the rest of the file.]
+[Optional, searched files: 6. Pick two sections of [file name] and say whether each would still make sense read alone, without the rest of the file.]
 
 Don't use outside knowledge to fill a gap; say it is a gap.
 ```

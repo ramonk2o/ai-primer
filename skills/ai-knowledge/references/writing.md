@@ -1,13 +1,13 @@
 # Writing the file
 
-Used in step 2.1. These rules make a file usable by a model that never saw the conversation. They hold for every type; each type file adds its own skeleton and rules.
+Used in step 1.3, for the sample entry, and in step 2.1. These rules make a file usable by a model that never saw the conversation. They hold for every type; each type file adds its own skeleton and rules.
 
 ## Contents
 - Who reads the file
 - Every line costs attention
 - Structure
 - Sections that stand alone
-- Large projects
+- Searched files
 - Rules
 - Examples and literal text
 - Facts that change
@@ -18,7 +18,7 @@ Used in step 2.1. These rules make a file usable by a model that never saw the c
 
 - Write for a capable colleague who knows the world but not this project. Explain what is specific to the project (its rules, names, criteria, exceptions) and skip what any capable reader already knows.
 - A file is consulted, not obeyed. It doesn't open with "You are…" or claim authority over the project's instructions; a file that poses as a system prompt competes with the instructions instead of supporting them.
-- In a small Claude project the model reads the whole file at once; in a large one it searches the project's files and reads the pieces it finds, and ChatGPT's help doesn't say which it does. Write every file so a piece still makes sense, and apply "Large projects" when the plan says large.
+- In a small Claude project the model reads the whole file at once; in a large one it searches the project's files and reads the pieces it finds, and ChatGPT's help doesn't say which it does. Write every file so a piece still makes sense, and apply "Searched files" when the plan says searched.
 
 ## Every line costs attention
 
@@ -45,9 +45,9 @@ A model's accuracy drops as its context fills, and text that looks relevant but 
 - Use one term per concept, the same term the project uses. Mixing synonyms ("client", "customer", "account") makes the reader wonder whether they differ, and makes searches miss.
 - Don't make a section depend on another ("as explained above"). If it needs a definition, use the exact term so the glossary entry is found.
 
-## Large projects
+## Searched files
 
-When the project's knowledge nears the context limit, the model reads short retrieved pieces, which may come without the heading above them.
+When the files are searched (a Claude project near the context limit, any ChatGPT destination), the model reads short retrieved pieces, which may come without the heading above them.
 
 - Name the subject inside the section's text too, not only in its heading, and repeat it instead of "it", "the company" or "this quarter".
 - Keep each rule, with its condition and exception, short enough to fit in one piece; split a long section into subsections by subject.

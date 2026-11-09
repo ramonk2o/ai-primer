@@ -29,7 +29,7 @@ Recommend a path in the first round, with a one-line reason.
 
 **Full** — for rules with consequences (guidelines a client will hold you to, a policy, a playbook people follow, a reference with prices or legal terms), long or conflicting material, or a file a team shares. It runs the interview, the triage, the gate and the cold reader.
 
-**Light** — for a glossary, a short checklist, an output template, a small profile, or revising a file whose content is settled. When the request and the material already give the project, the file's role and its type, the first reply brings the complete File plan with its sample entry and one round of the 3 to 5 highest-risk questions, the path first, and asks the user to answer and approve. Otherwise one opening round comes first. Answers that only fill gaps or adjust wording approve the plan, and the next reply writes the file; answers that change the plan show what changed and ask again. After writing, offer the cold reader in one line. One proposal, one gate.
+**Light** — for a glossary, a short checklist, an output template, a small profile, or revising a file whose content is settled. When the request and the material already give the project, the file's role and its type, the first reply brings the complete File plan with its sample entry, drafted as 1.3 says, and one round of the 3 to 5 highest-risk questions, the path first, and asks the user to answer and approve. Otherwise one opening round comes first. Answers that only fill gaps or adjust wording approve the plan, and the next reply writes the file; answers that change the plan show what changed and ask again. After writing, offer the cold reader in one line. One proposal, one gate.
 
 If the light path turns up contradictions, rules with consequences, or a second file, suggest switching to full.
 
@@ -69,7 +69,7 @@ Read the materials before asking about them, and don't claim to have read a file
 **0.2 Context.** Settle what the request and the material don't answer:
 - **Project:** what the project or assistant does, and for whom.
 - **Role of the file:** which task, decision or behavior it supports, pinned down with a concrete request someone would make.
-- **Destination and size:** the platform, only when it changes something (by default the file is portable Markdown), and how much knowledge the project holds with this file: a few short files, which a Claude project reads whole, or manuals and catalogs near the context limit, which it searches; ChatGPT files are written as if searched. Read `references/platforms.md` when the destination is known or the project is large. For a platform with no section in `references/platforms.md` (a custom GPT, a Gem), write portable Markdown as if searched (Project size: large), and say in one line that this skill hasn't checked how that platform reads files.
+- **Destination and size:** the platform, only when it changes something (by default the file is portable Markdown), and how much knowledge the project holds with this file: a few short files, which a Claude project reads whole, or manuals and catalogs near the context limit, which it searches. Any ChatGPT destination counts as searched. Read `references/platforms.md` when the destination is known or the files are searched. For a platform with no section in `references/platforms.md` (a custom GPT, a Gem), write portable Markdown as if searched (Size: searched), and say in one line that this skill hasn't checked how that platform reads files.
 - **Neighbors:** the project's instructions and other files, so the file doesn't repeat or contradict them.
 - **Upkeep:** who updates it and how often, which decides whether fast-changing facts belong in it.
 
@@ -107,7 +107,7 @@ The first reply already does work: the process sentence, the type, the reading o
 
 In the light path, the triage is a short list inside the plan.
 
-**1.3 Outline.** The file name (descriptive, lowercase with hyphens, since assistants search by it), the sections in order with what each holds and its source, and a **sample entry**: one real item as it will appear (a glossary term, a rule with its condition and exception, a step with its decision).
+**1.3 Outline.** The file name (descriptive, lowercase with hyphens, since assistants search by it), the sections in order with what each holds and its source, and a **sample entry**: one real item as it will appear (a glossary term, a rule with its condition and exception, a step with its decision). Draft the sample entry by `references/writing.md` and the type file, read now, so the text approved here is the text written at 2.1.
 
 ### Gate — File plan
 
@@ -115,7 +115,7 @@ In the light path, the triage is a short list inside the plan.
 FILE PLAN — [file-name.md]
 Path: full | light
 Project: … · Role of the file: …
-Type: … (+ …) · Destination: portable | … · Project size: small | large
+Type: … (+ …) · Destination: portable | … · Size: read whole | searched
 Use cases
 1. …
 2. …
@@ -132,7 +132,7 @@ Ask for explicit approval. Pending items are resolved before writing or, if the 
 
 ## Write
 
-**2.1 Write.** Treat the File plan as the specification. Read `references/writing.md` and follow it with the type file, including its rules for large projects when the plan says large. If a section can't be written as planned (the data isn't there, two rules collide), go back to the plan instead of improvising.
+**2.1 Write.** Treat the File plan as the specification. Follow `references/writing.md` with the type file, including its rules for searched files when the plan says searched. If a section can't be written as planned (the data isn't there, two rules collide), go back to the plan instead of improvising.
 
 **2.2 Cut.** Remove every line that doesn't change an answer in a use case: repetition, common knowledge, background, transitions, near-duplicates of a neighbor. Keep every exact name, number, unit, condition, exception and negation.
 
