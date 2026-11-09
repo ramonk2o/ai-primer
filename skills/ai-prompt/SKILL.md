@@ -60,7 +60,7 @@ Order by risk: first what, if wrong, changes the result most. A question whose a
 
 **Propose before asking.** With material, bring a reading of it; without it, propose a starting point from the case. Never ask the user to know prompt techniques, model names or a tool's syntax.
 
-**Nothing invented.** Every fact about the user's situation in the prompt (names, figures, product details, rules, dates) comes from the material or the user; a missing one is a visible `[placeholder]`, because a prompt carries a guess into every run with full confidence. Facts about a model, mode or app (names, versions, features, limits, prices) come from current official documentation, as `references/research.md` says, never from memory. A detail or example you suggest stays labeled as a proposal until the user adopts it; anything without a source is `[TO CONFIRM]`.
+**Nothing invented.** Every fact about the user's situation in the prompt (names, figures, product details, rules, dates) comes from the material or the user; a missing one is a visible `[placeholder]`, because a prompt carries a guess into every run with full confidence. Facts about a model, mode or app (names, versions, features, limits, prices) come from current official documentation, as `references/research.md` says, never from memory. A detail or example you suggest stays labeled as a proposal until the user adopts it; anything without a source is `[TO CONFIRM]` in the plan and the delivery notes, never inside the prompt, where the target would read it as content; inside the prompt, a missing fact is a `[placeholder: …]`.
 
 **Go back when needed.** If something settled changes (the goal, the target, a step of a chain), say so and reopen that step.
 

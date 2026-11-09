@@ -9,7 +9,7 @@ Used to deliver the prompt, in both paths, as the final reply. The prompt is fin
 - **Translation:** when the prompt isn't in the user's language, a labeled translation below it, so they can check what it asks.
 - **How to adjust:** three to five lines of "if the result comes out like this, change that", from the case file's pitfalls and the target's guidance.
 - **The guidance it follows:** one line naming what you read and its date, and what to check if the app has changed since.
-- **How to check it:** the goal's statements from the Prompt plan as a short checklist of yes-or-no questions for the first real run, with the failure to avoid among them.
+- **How to check it:** the goal's statements from the Prompt plan as a short checklist of yes-or-no questions for the first real run, with the failure to avoid among them. When the case file gives first-run advice (a dry run for an agent task, a few real inputs, one odd, for a template), it goes here too.
 - **The real run is the test:** one line inviting the user to bring back a result that misses an item, for an adjustment round.
 
 ## Where it goes
