@@ -14,18 +14,6 @@ Ideas, bugs and debt for this plugin, managed with sensei's log skill. Each entr
 - **Motivation:** consistency audit, 2026-11-08 (no case from real use). cases/agent-task.md says the delivery suggests a first run that asks before each change, or a dry run. delivery.md takes only the case file's pitfalls, so the safety advice is dropped.
 - **Description:** delivery.md includes the case file's first-run advice when it has one.
 
-## ai-knowledge
-
-### Plan's sample entry is drafted before the writing rules are read
-- **Type:** Bug
-- **Motivation:** consistency audit, 2026-11-08 (no case from real use). references/writing.md is first read at 2.1, after the gate, so the sample entry approved at 1.3 (or in the light proposal) is drafted without its rules and rewritten at 2.1. The user approves text that doesn't survive.
-- **Description:** read references/writing.md before drafting the sample entry, on both paths.
-
-### Project size doesn't settle ChatGPT files
-- **Type:** Bug
-- **Motivation:** consistency audit, 2026-11-08 (no case from real use). The large-project rules apply only "when the plan says large", but ChatGPT files are to be written as if searched; a small ChatGPT project gets marked small and the excerpt rules are skipped. ai-project hands over "Size: read whole | searched", which ai-knowledge has to map onto small | large.
-- **Description:** use one term pair in both skills (e.g. "read whole | searched") and say that any ChatGPT destination counts as searched.
-
 ## Plugin
 
 ### File search fact exists only in ai-knowledge's platform summary
