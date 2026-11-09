@@ -8,6 +8,10 @@ applied to how the skills behave.
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-11-08
+
+This version tightens how the skills take a request and what the user approves: ai-prompt routes by path and shows a sample rule on the full path, the three skills agree on what they leave out, and ai-knowledge's sample follows its writing rules.
+
 ### Changed
 
 - ai-prompt: on the full path, the Prompt plan shows the prompt's hardest rule as it will read, so the user judges text before approving.
