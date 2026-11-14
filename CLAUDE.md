@@ -20,7 +20,8 @@ Other skills or plugins that write skills or manage these files don't apply in t
 - **Skills stand alone:** yes: each skill reads nothing outside its folder, so a shared rule is written in every skill that needs it, and each release ships one zip per skill (`<skill>.zip`, the folder at the zip's root), which the README links for Claude apps users.
 - **Validate:** sensei's check script on every change (it runs `claude plugin validate` on the last commit); `--release` at release, which adds `--profile directory`.
 - **Commits:** author `Ramon K. <contato@ramonk.com>`; no trailers (no `Co-Authored-By`, no `Claude-Session`), whatever the environment suggests.
-- **Integration:** one branch per change, named after it; local merge into `main` with `--no-ff`, so a change reverts as one commit; push `main` when the maintainer says so or at release.
+- **Integration:** one branch per change, named after it; pull requests: push the branch, open the pull request and merge it with a merge commit, each on the maintainer's OK, so a change reverts as one commit.
+- **Backlog:** GitHub issues
 - **Tags:** `vX.Y.Z`.
 - **Old names:** the skills were recreated from superlab's (superproject, supercontext, superprompt…). The maintainer may still use an old name; a skill's text never cites them, and its folder name matches its frontmatter `name`.
 - **Trying a change in Claude apps before a release:** zip the skill's folder on the branch (folder at the zip's root) for the maintainer to upload as a personal skill.
